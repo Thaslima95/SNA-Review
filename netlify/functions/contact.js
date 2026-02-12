@@ -24,12 +24,13 @@ exports.handler = async (event) => {
                 <!-- HEADER -->
                 <tr>
                   <td style="background:#991b1b; padding:25px 30px;">
-<img 
-  src="https://raw.githubusercontent.com/Thaslima95/SNA-Review/main/public/sna-logo.png"
-  alt="Singapore Neuroscience Association Logo"
-  width="150"
-  style="display:block; margin-bottom:20px;"
+<img
+  src="https://sna-review.netlify.app/sna-logo.png"
+  alt="Singapore Neuroscience Association"
+  width="140"
+  style="display:block;"
 />
+
                     <h2 style="color:#ffffff; margin:0;">
                       New Contact Form Submission
                     </h2>
@@ -90,7 +91,12 @@ exports.handler = async (event) => {
                 <!-- HEADER -->
                 <tr>
                   <td style="background:#991b1b; padding:25px 30px;">
-                    <img src="https://neuroscience.sg/logo.png" alt="SNA Logo" width="120" style="display:block; margin-bottom:15px;" />
+<img
+  src="https://sna-review.netlify.app/sna-logo.png"
+  alt="Singapore Neuroscience Association"
+  width="140"
+  style="display:block;"
+/>
                     <h2 style="color:#ffffff; margin:0;">
                       Thank You for Your Enquiry
                     </h2>
