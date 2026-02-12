@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "build"
+  publish = "dist"
   functions = "netlify/functions"
 
 [functions]
@@ -8,4 +8,4 @@
 
 [build.environment]
   NODE_VERSION = "18"
-  NPM_FLAGS = "--include=dev"
+
