@@ -1,82 +1,153 @@
 const sgMail = require("@sendgrid/mail");
 
 exports.handler = async (event) => {
-  // Allow only POST
-  if (event.httpMethod !== "POST") {
-    return {
-      statusCode: 405,
-      body: JSON.stringify({
-        success: false,
-        message: "Method Not Allowed",
-      }),
-    };
-  }
-
   try {
-    // Check API key exists
-    if (!process.env.SENDGRID_API_KEY) {
-      return {
-        statusCode: 500,
-        body: JSON.stringify({
-          success: false,
-          message: "SendGrid API key not configured",
-        }),
-      };
-    }
-
     const { name, email, message } = JSON.parse(event.body);
-
-    // Basic validation
-    if (!name || !email || !message) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({
-          success: false,
-          message: "All fields are required",
-        }),
-      };
-    }
 
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-    const msg = {
-      to: "thaslibanujas7@gmail.com", // Where you receive messages
+    // ===============================
+    // 1️⃣ ADMIN NOTIFICATION EMAIL
+    // ===============================
+
+    const adminMsg = {
+      to: "thaslibanujas7@gmail.com", // Admin receiving email
       from: "nizuthasli15@gmail.com", // MUST be verified in SendGrid
-      replyTo: email, // So you can reply directly
-      subject:
-        "[Singapore Neuroscience Association] New Contact Form Submission",
+      subject: "New Website Enquiry – Singapore Neuroscience Association",
       html: `
-        <div style="font-family: Arial, sans-serif; padding:20px;">
-          <h2 style="color:#991b1b;">New Contact Form Message</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Message:</strong></p>
-          <div style="background:#f8f8f8; padding:10px; border-radius:5px;">
-            ${message}
-          </div>
-        </div>
+      <body style="margin:0; padding:0; font-family:Arial,sans-serif; background:#f8fafc;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0;">
+          <tr>
+            <td align="center">
+              <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+
+                <!-- HEADER -->
+                <tr>
+                  <td style="background:#991b1b; padding:25px 30px;">
+                    <img src="https://neuroscience.sg/logo.png" alt="SNA Logo" width="120" style="display:block; margin-bottom:15px;" />
+                    <h2 style="color:#ffffff; margin:0;">
+                      New Contact Form Submission
+                    </h2>
+                  </td>
+                </tr>
+
+                <!-- CONTENT -->
+                <tr>
+                  <td style="padding:30px;">
+                    <p style="color:#374151;">A new enquiry has been received via the SNA website.</p>
+
+                    <p style="font-weight:bold; margin-top:20px;">Name</p>
+                    <p>${name}</p>
+
+                    <p style="font-weight:bold;">Email</p>
+                    <p><a href="mailto:${email}" style="color:#991b1b;">${email}</a></p>
+
+                    <p style="font-weight:bold;">Message</p>
+                    <div style="background:#f3f4f6; padding:15px; border-radius:8px;">
+                      ${message}
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- FOOTER -->
+                <tr>
+                  <td style="background:#f9fafb; padding:20px; font-size:12px; color:#6b7280; text-align:center;">
+                    Singapore Neuroscience Association<br/>
+                    28 Medical Drive, Centre for Life Sciences<br/>
+                    Singapore 117456
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
       `,
     };
 
-    await sgMail.send(msg);
+    // ===============================
+    // 2️⃣ AUTO-REPLY TO USER
+    // ===============================
+
+    const autoReply = {
+      to: email,
+      from: "nizuthasli15@gmail.com", // Must be verified
+      subject:
+        "Thank you for contacting the Singapore Neuroscience Association",
+      html: `
+      <body style="margin:0; padding:0; font-family:Arial,sans-serif; background:#f8fafc;">
+        <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0;">
+          <tr>
+            <td align="center">
+              <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+
+                <!-- HEADER -->
+                <tr>
+                  <td style="background:#991b1b; padding:25px 30px;">
+                    <img src="https://neuroscience.sg/logo.png" alt="SNA Logo" width="120" style="display:block; margin-bottom:15px;" />
+                    <h2 style="color:#ffffff; margin:0;">
+                      Thank You for Your Enquiry
+                    </h2>
+                  </td>
+                </tr>
+
+                <!-- CONTENT -->
+                <tr>
+                  <td style="padding:30px; color:#374151; line-height:1.6;">
+                    <p>Dear ${name},</p>
+
+                    <p>
+                      Thank you for contacting the Singapore Neuroscience Association.
+                      We have received your message and our team will review it shortly.
+                    </p>
+
+                    <p>
+                      If your enquiry is urgent, please contact us directly at:
+                      <br/>
+                      <strong>secretariat@neuroscience.sg</strong>
+                    </p>
+
+                    <p>
+                      We appreciate your interest in SNA and look forward to assisting you.
+                    </p>
+
+                    <p style="margin-top:30px;">
+                      Kind regards,<br/>
+                      Singapore Neuroscience Association
+                    </p>
+                  </td>
+                </tr>
+
+                <!-- FOOTER -->
+                <tr>
+                  <td style="background:#f9fafb; padding:20px; font-size:12px; color:#6b7280; text-align:center;">
+                    This is an automated confirmation email.<br/>
+                    Singapore Neuroscience Association
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+        </table>
+      </body>
+      `,
+    };
+
+    // Send both emails
+    await sgMail.send(adminMsg);
+    await sgMail.send(autoReply);
 
     return {
       statusCode: 200,
-      body: JSON.stringify({
-        success: true,
-        message: "Email sent successfully",
-      }),
+      body: JSON.stringify({ message: "Emails sent successfully" }),
     };
   } catch (error) {
-    console.error("SendGrid Error:", error.response?.body || error.message);
-
+    console.error(error);
     return {
       statusCode: 500,
-      body: JSON.stringify({
-        success: false,
-        message: "Failed to send email",
-        error: error.response?.body || error.message,
-      }),
+      body: JSON.stringify({ error: "Email failed to send" }),
     };
   }
 };
