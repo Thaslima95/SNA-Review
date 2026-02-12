@@ -78,72 +78,78 @@ exports.handler = async (event) => {
 
     const autoReply = {
       to: email,
-      from: "nizuthasli15@gmail.com", // Must be verified
+      from: "nizuthasli15@gmail.com",
       subject:
         "Thank you for contacting the Singapore Neuroscience Association",
       html: `
-      <body style="margin:0; padding:0; font-family:Arial,sans-serif; background:#f8fafc;">
-        <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc; padding:40px 0;">
+    <tr>
+      <td align="center">
+
+        <!-- MAIN CONTAINER -->
+        <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;">
+
+          <!-- HEADER -->
           <tr>
-            <td align="center">
-              <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+            <td style="background:#991b1b; padding:30px;" align="left">
 
-                <!-- HEADER -->
-                <tr>
-                  <td style="background:#991b1b; padding:25px 30px;">
-<img
-  src="https://sna-review.netlify.app/sna-logo.png"
-  alt="Singapore Neuroscience Association"
-  width="140"
-  style="display:block;"
-/>
-                    <h2 style="color:#ffffff; margin:0;">
-                      Thank You for Your Enquiry
-                    </h2>
-                  </td>
-                </tr>
+              <img
+                src="https://sna-review.netlify.app/sna-logo.png"
+                alt="Singapore Neuroscience Association"
+                width="140"
+                border="0"
+                style="display:block; outline:none; text-decoration:none;"
+              />
 
-                <!-- CONTENT -->
-                <tr>
-                  <td style="padding:30px; color:#374151; line-height:1.6;">
-                    <p>Dear ${name},</p>
+              <h2 style="color:#ffffff; margin:20px 0 0 0; font-family:Arial, sans-serif;">
+                Thank You for Your Enquiry
+              </h2>
 
-                    <p>
-                      Thank you for contacting the Singapore Neuroscience Association.
-                      We have received your message and our team will review it shortly.
-                    </p>
-
-                    <p>
-                      If your enquiry is urgent, please contact us directly at:
-                      <br/>
-                      <strong>secretariat@neuroscience.sg</strong>
-                    </p>
-
-                    <p>
-                      We appreciate your interest in SNA and look forward to assisting you.
-                    </p>
-
-                    <p style="margin-top:30px;">
-                      Kind regards,<br/>
-                      Singapore Neuroscience Association
-                    </p>
-                  </td>
-                </tr>
-
-                <!-- FOOTER -->
-                <tr>
-                  <td style="background:#f9fafb; padding:20px; font-size:12px; color:#6b7280; text-align:center;">
-                    This is an automated confirmation email.<br/>
-                    Singapore Neuroscience Association
-                  </td>
-                </tr>
-
-              </table>
             </td>
           </tr>
+
+          <!-- CONTENT -->
+          <tr>
+            <td style="padding:30px; font-family:Arial, sans-serif; color:#374151; line-height:1.6;">
+
+              <p style="margin-top:0;">Dear ${name},</p>
+
+              <p>
+                Thank you for contacting the Singapore Neuroscience Association.
+                We have received your message and our team will review it shortly.
+              </p>
+
+              <p>
+                If your enquiry is urgent, please contact us directly at:<br/>
+                <strong>secretariat@neuroscience.sg</strong>
+              </p>
+
+              <p>
+                We appreciate your interest in SNA and look forward to assisting you.
+              </p>
+
+              <p style="margin-top:30px;">
+                Kind regards,<br/>
+                Singapore Neuroscience Association
+              </p>
+
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background:#f3f4f6; padding:20px; font-size:12px; color:#6b7280; text-align:center; font-family:Arial, sans-serif;">
+              This is an automated confirmation email.<br/>
+              Singapore Neuroscience Association
+            </td>
+          </tr>
+
         </table>
-      </body>
-      `,
+
+      </td>
+    </tr>
+  </table>
+  `,
     };
 
     // Send both emails
