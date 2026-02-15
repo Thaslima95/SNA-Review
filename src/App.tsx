@@ -39,6 +39,7 @@ function App() {
             <Route path="/seminars" element={<Seminars />} />
             <Route path="/brain-bee" element={<BrainBee />} />
             <Route path="/symposium-2026" element={<SymposiumTemplate />} />
+              <Route path="/research" element={<ResearchHighlights />} />
             <Route path="/contact" element={<ContactUs />} />
           </Routes>
         </main>

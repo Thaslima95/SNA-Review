@@ -18,7 +18,7 @@ export const Home = () => {
                The Singapore Neuroscience Association (SNA) is dedicated to fostering neuroscientific research and education. We bring together researchers, clinicians, and students to unravel the mysteries of the brain.
              </p>
              <Link to="/history" className="inline-flex items-center font-semibold text-[#991b1b] hover:underline">
-               Read our History <ArrowRight size={16} className="ml-2" />
+               Read Our History <ArrowRight size={16} className="ml-2" />
              </Link>
            </div>
          </div>
@@ -35,14 +35,14 @@ export const Home = () => {
                </div>
                <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-3 leading-tight">Neuroscience across the Lifespan</h2>
                <h3 className="text-xl md:text-2xl text-slate-600 font-serif italic mb-6 border-l-4 border-[#991b1b] pl-4">
-                 Neurodevelopment, Longevity and Mental Health Symposium
+                 Neurodevelopment, Longevity, and Mental Health Symposium
                </h3>
                <p className="text-slate-600 mb-8 leading-relaxed text-lg">
                  Join us for the SNA Symposium 2026. This year's theme focuses on the critical intersection of neurodevelopment, longevity, and mental health, bringing together world-renowned experts.
                </p>
                <div className="flex gap-4">
                  <Link to="/symposium-2026" className="inline-flex items-center bg-[#991b1b] text-white px-8 py-3 rounded-lg font-bold hover:bg-[#7f1d1d] transition-colors shadow-lg shadow-red-900/10">
-                   View Full Details
+                   View Details
                  </Link>
                </div>
              </div>
@@ -74,7 +74,7 @@ export const Home = () => {
                     <FileText className="text-blue-500 mb-4" size={32} />
                     <h3 className="text-xl font-bold text-slate-900 mb-3">Free Radical Biology & Ageing</h3>
                     <p className="text-slate-600 mb-4">
-                        Prof Barry Halliwell’s pioneering work in free radical biology has driven key Life Sciences and ageing research initiatives at NUS.
+                        Prof Barry Halliwell’s pioneering work in free radical biology has driven key life sciences and ageing research initiatives at NUS.
                     </p>
                      <a href="#halliwell-interview" className="text-sm font-bold text-slate-400 group-hover:text-[#991b1b] transition-colors">Read More</a>
                 </div>
@@ -83,8 +83,9 @@ export const Home = () => {
                     <Brain className="text-purple-500 mb-4" size={32} />
                     <h3 className="text-xl font-bold text-slate-900 mb-3">Global Impact & Recognition</h3>
                     <p className="text-slate-600 mb-4">
-                        Ranked #1 worldwide in Free Radical Research citations and honoured with the Lifetime Achievement Award by the SFRBM (USA).
-                    </p>
+Ranked #1 worldwide in citation impact in <em>Free Radical Research</em> and honoured with the Lifetime Achievement Award by the SFRBM (USA).
+</p>
+
                     <a href="#halliwell-interview" className="text-sm font-bold text-slate-400 group-hover:text-[#991b1b] transition-colors">Read More</a>
                 </div>
             </div>
@@ -102,17 +103,30 @@ export const Home = () => {
                       <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Spotlight Interview</span>
                    </div>
                    <h3 className="text-2xl font-bold text-slate-900 mb-4">Professor Barry Halliwell – A radical reformist of NUS Research landscape</h3>
-                   <div className="prose prose-slate text-slate-600 leading-relaxed text-sm mb-6">
-                     <p className="mb-4">
-                       Professor Barry Halliwell is a man who constantly transforms the research landscape at the National University of Singapore where he is rightly placed in the University Hall as the Deputy President for Research & Technology and as the Tan Chin Tuan Centennial Professor of Biochemistry. He has garnered international attention for his work in the field of Free Radical Biology in the 90s and at the right time, was spotted on the radar of NUS which has always been eyeing for top international talents.
-                     </p>
-                     <p className="mb-4">
-                       NUS's decision was right as he has already helped drive the development of the Life Sciences/Translational Medicine initiatives at NUS over the past ten years and is now driving initiatives in ageing research. In fact, Prof Halliwell started his journey with free radicals research in 1970s and published a number of articles in internationally reputed journals.
-                     </p>
-                     <p>
-                       Recently, he was honoured with the "Lifetime Achievement Award" by the Society for Free Radical Biology and Medicine in the USA for overall sustained excellence in the field. His laboratory is also ranked number as 1 worldwide with the highest citation score in Free Radical Research. Despite his busy schedule, he readily accepted to meet us when approached him for this interview. Read on to know the story of a boy from a "working class" background, who went on to become the number 1 scientist in free radical research.
-                     </p>
-                   </div>
+                  <div className="leading-relaxed text-slate-600 space-y-4">
+          <p>
+            Professor Barry Halliwell continues to shape the research landscape at the National University of Singapore, where he serves as Deputy President (Research & Technology) and Tan Chin Tuan Centennial Professor of Biochemistry.
+          </p>
+
+          <p>
+            Internationally recognised for his pioneering work in free radical biology in the 1990s, he has played a central role in advancing life sciences, translational medicine, and ageing research initiatives at NUS.
+          </p>
+
+          <p>
+            His laboratory has been ranked number one worldwide for citation impact in <em>Free Radical Research</em>, and he was honoured with the Lifetime Achievement Award by the Society for Free Radical Biology and Medicine (USA).
+          </p>
+        </div>
+
+       <Link
+  to="/research"
+  className="mt-6 inline-flex items-center font-semibold text-[#991b1b] hover:underline group"
+>
+  Read Full Interview
+  <ArrowRight
+    size={16}
+    className="ml-2 transition-transform group-hover:translate-x-1"
+  />
+</Link>
                 </div>
 
                 {/* Side Column */}
@@ -124,7 +138,9 @@ export const Home = () => {
                          <span className="text-amber-700 font-bold text-xs uppercase tracking-wider">Award News</span>
                        </div>
                        <h3 className="text-lg font-bold text-slate-900 mb-2">SNA Lifetime Achievement Award</h3>
-                       <p className="text-slate-600 mb-3 text-sm">Barry Halliwell receives SNA Lifetime Achievement Award.</p>
+<p className="text-slate-600 mb-3 text-sm">
+Professor Barry Halliwell receives the SNA Lifetime Achievement Award.
+</p>
                        <span className="text-xs text-slate-400 italic font-medium">(Courtesy: NUS Newshub)</span>
                    </div>
 
@@ -138,7 +154,7 @@ export const Home = () => {
                              <Globe className="w-5 h-5 mr-2" /> SNA Travel Award
                           </h3>
                           <p className="text-red-100 mb-6 text-sm leading-relaxed">
-                             SNA has set aside funds to support its members traveling to and presenting at international neuroscience conferences.
+SNA has set aside funds to support its members travelling to and presenting at international neuroscience conferences.
                           </p>
                           <button className="bg-white text-[#991b1b] px-4 py-2 rounded-lg font-bold text-sm hover:bg-red-50 transition-colors w-full">
                              Apply for Award

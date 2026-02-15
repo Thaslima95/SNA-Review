@@ -1,5 +1,6 @@
-import React from 'react';
-import { Linkedin, Mail } from 'lucide-react';
+import React, { useState } from 'react';
+import { Linkedin, Mail, Copy } from 'lucide-react';
+
 import thameem from '@/assets/executives/thameem.jpg';
 import gavin from '@/assets/executives/gavin.jpg';
 import sara from '@/assets/executives/sara.jpg';
@@ -27,7 +28,7 @@ export const executives: Executive[] = [
     role: 'President',
     affiliation: 'YLL School of Medicine',
     img: thameem,
-    email: '',
+    email: 'antstd@nus.edu.sg',
     linkedin: ''
   },
   {
@@ -35,7 +36,7 @@ export const executives: Executive[] = [
     role: 'Vice President',
     affiliation: 'YLL School of Medicine',
     img: gavin,
-    email: '',
+    email: 'phchead@nus.edu.sg',
     linkedin: ''
   },
   {
@@ -43,7 +44,7 @@ export const executives: Executive[] = [
     role: 'Secretary',
     affiliation: '',
     img: sara,
-    email: '',
+    email: 'antskr@nus.edu.sg',
     linkedin: ''
   },
   {
@@ -51,7 +52,7 @@ export const executives: Executive[] = [
     role: 'Treasurer',
     affiliation: '',
     img: deepika,
-    email: '',
+    email: 'antdk@nus.edu.sg',
     linkedin: ''
   },
 
@@ -61,7 +62,7 @@ export const executives: Executive[] = [
     role: 'Council Member',
     affiliation: '',
     img: ong,
-    email: '',
+    email: 'antongwy@nus.edu.sg',
     linkedin: ''
   },
   {
@@ -69,7 +70,7 @@ export const executives: Executive[] = [
     role: 'Council Member',
     affiliation: '',
     img: dinesh,
-    email: '',
+    email: 'antdine@nus.edu.sg',
     linkedin: ''
   },
   {
@@ -77,7 +78,7 @@ export const executives: Executive[] = [
     role: 'Council Member',
     affiliation: '',
     img: jai,
-    email: '',
+    email: 'antjsp@nus.edu.sg',
     linkedin: ''
   },
   {
@@ -85,7 +86,7 @@ export const executives: Executive[] = [
     role: 'Council Member',
     affiliation: '',
     img: satish,
-    email: '',
+    email: 'antslr@nus.edu.sg',
     linkedin: ''
   },
 
@@ -95,7 +96,7 @@ export const executives: Executive[] = [
     role: 'Auditor',
     affiliation: '',
     img: jayabharathi,
-    email: '',
+    email: 'antkj@nus.edu.sg',
     linkedin: ''
   },
   {
@@ -103,12 +104,15 @@ export const executives: Executive[] = [
     role: 'Auditor',
     affiliation: '',
     img: kevin,
-    email: '',
+    email: 'kevinjayaraj@nus.edu.sg',
     linkedin: ''
   }
 ];
 
+
 export const Executives = () => {
+  const [copiedEmail, setCopiedEmail] = useState<string | null>(null);
+
   return (
     <section id="executives" className="py-24 bg-slate-50 font-sans text-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -170,11 +174,55 @@ export const Executives = () => {
                   {/* Divider Line */}
                   <div className="w-16 h-px bg-slate-200 mb-6 mt-auto"></div>
                   <div className="flex justify-center space-x-6">
-                    {exec.email && (
-                      <a href={exec.email} className="text-slate-400 hover:text-[#991b1b] transition-colors" aria-label={`Email ${exec.name}`}>
-                        <Mail size={20} strokeWidth={1.5} />
-                      </a>
-                    )}
+        {exec.email?.trim() && (
+  <div className="relative flex items-center space-x-3 text-sm text-slate-600">
+
+    {/* Mail Icon */}
+    <a
+      href={`mailto:${exec.email.trim()}`}
+     
+      rel="noopener noreferrer"
+      className="text-slate-400 hover:text-[#991b1b] transition-colors"
+      aria-label={`Email ${exec.name}`}
+    >
+      <Mail size={18} strokeWidth={1.5} />
+    </a>
+
+    {/* Email Text */}
+    <a
+      href={`mailto:${exec.email.trim()}`}
+      className="hover:text-[#991b1b] transition-colors"
+    >
+      {exec.email}
+    </a>
+
+    {/* Copy Icon */}
+    <button
+      onClick={() => {
+        navigator.clipboard.writeText(exec.email!);
+        setCopiedEmail(exec.email!);
+        setTimeout(() => setCopiedEmail(null), 2000);
+      }}
+      className="text-slate-400 hover:text-[#991b1b] transition-colors relative"
+      aria-label={`Copy email of ${exec.name}`}
+    >
+      <Copy size={18} strokeWidth={1.5} />
+
+      {/* Tooltip */}
+      {copiedEmail === exec.email && (
+  <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-slate-800 text-white text-xs px-3 py-1.5 rounded-md shadow-lg opacity-0 animate-fadeIn whitespace-nowrap">
+    Copied
+    <span className="absolute left-1/2 -bottom-1.5 -translate-x-1/2 w-2 h-2 bg-slate-800 rotate-45"></span>
+  </span>
+)}
+
+    </button>
+
+  </div>
+)}
+
+
+
                     {exec.linkedin && (
                       <a href={exec.linkedin} className="text-slate-400 hover:text-[#0077b5] transition-colors" aria-label={`LinkedIn profile of ${exec.name}`}>
                         <Linkedin size={20} strokeWidth={1.5} />

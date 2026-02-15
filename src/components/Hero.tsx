@@ -39,7 +39,7 @@ export const Hero = () => {
             </p>
             
             <div className="flex flex-wrap gap-4">
-              <Link to="/" className="flex items-center space-x-2 bg-[#991b1b] text-white px-8 py-4 rounded-xl hover:bg-[#7f1d1d] transition-all hover:scale-105 active:scale-95 shadow-lg shadow-red-900/20 font-medium">
+              <Link to="/research" className="flex items-center space-x-2 bg-[#991b1b] text-white px-8 py-4 rounded-xl hover:bg-[#7f1d1d] transition-all hover:scale-105 active:scale-95 shadow-lg shadow-red-900/20 font-medium">
                 <span>Explore Research</span>
                 <ArrowRight size={18} />
               </Link>
@@ -75,7 +75,7 @@ export const Hero = () => {
                 <span className="text-sm font-semibold text-slate-400 uppercase tracking-wider">Active Members</span>
               </div>
               <div className="text-3xl font-bold text-slate-800">1,200+</div>
-              <p className="text-slate-500 text-sm">Researchers connected in SG</p>
+              <p className="text-slate-500 text-sm">Researchers connected across Singapore</p>
             </motion.div>
           </motion.div>
         </div>

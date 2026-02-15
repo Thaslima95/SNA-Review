@@ -102,14 +102,14 @@ export const History = () => {
               <TimelineItem
                 year="1994"
                 title="Third Presidency"
-                desc="Professor Ling Eng Ang assumed the presidency as the third President, expanding the association's academic reach."
+                desc="Professor Ling Eng Ang assumed the presidency as the third President, expanding the Association's academic reach."
                 alignment="right"
                 icon={<Users className="w-5 h-5 text-white" />}
               />
               <TimelineItem
                 year="1998"
                 title="Fourth Presidency"
-                desc="Leadership passed to Associate Professor Samuel S.W. Tay, steering the association into the new millennium."
+                desc="Leadership passed to Associate Professor Samuel S.W. Tay, steering the Association into the new millennium."
                 alignment="left"
                 icon={
                   <UserCheck className="w-5 h-5 text-white" />
@@ -118,14 +118,14 @@ export const History = () => {
               <TimelineItem
                 year="2009"
                 title="Continued Leadership"
-                desc="Professor S. Thameem Dheen succeeded as President of SNA, emphasizing international collaboration and research excellence."
+                desc="Professor S. Thameem Dheen succeeded as President of SNA, emphasising international collaboration and research excellence."
                 alignment="right"
                 icon={<Award className="w-5 h-5 text-white" />}
               />
               <TimelineItem
                 year="2011"
                 title="Brain Bee Initiative"
-                desc="SNA appointed Singapore Coordinator of the International Brain Bee Challenge and launched the National Brain Bee Challenge to inspire youth."
+                desc="SNA appointed a Singapore Coordinator for the International Brain Bee Challenge and launched the National Brain Bee Challenge to inspire youth."
                 alignment="left"
                 icon={<Zap className="w-5 h-5 text-white" />}
               />
@@ -163,9 +163,9 @@ export const History = () => {
             icon={<Globe className="w-8 h-8 text-[#991b1b]" />}
             title="Global Engagement"
             items={[
-              "Affiliated with International Brain Research Organization (IBRO)",
-              "Affiliated with FAONS",
-              "President serves on the Governing Councils of IBRO and FAONS",
+              "Affiliated with the International Brain Research Organization (IBRO)",
+              "Affiliated with the Federation of Asian-Oceanian Neuroscience Societies (FAONS)",
+              "The President serves on the Governing Councils of IBRO and FAONS",
             ]}
           />
 
@@ -174,7 +174,8 @@ export const History = () => {
             icon={<Zap className="w-8 h-8 text-[#991b1b]" />}
             title="Brain Bee & Youth"
             items={[
-              "Organizer of the Singapore Brain Bee Challenge",
+              "In 2011, the President of SNA was appointed Singapore Coordinator of the International Brain Bee Challenge, a non-profit neuroscience competition",
+              "SNA has since organised the National Brain Bee Challenge in Singapore",
               "Motivating high school students to pursue neuroscience",
               "Winners receive trophies, cash awards, and international travel fellowships",
             ]}
@@ -185,10 +186,9 @@ export const History = () => {
             icon={<Star className="w-8 h-8 text-[#991b1b]" />}
             title="Supporting Excellence & Fellowships"
             items={[
-              "Travel fellowships for international conference participation",
-              "Awarded multiple travel fellowships to deserving members for participation in international neuroscience conferences",
-              "Support from private-sector donations",
-              "Activities supported through donations from the private sector",
+              "Travel fellowships for participation in international conferences",
+              "Awarded multiple travel fellowships to deserving members for international neuroscience conferences",
+              "Supported by private-sector donations to help defray the costs of activities",
             ]}
           />
 
@@ -199,7 +199,7 @@ export const History = () => {
             }
             title="Seminars & Conferences"
             items={[
-              "Organized numerous neuroscience seminars",
+              "Organised numerous neuroscience seminars",
               "Hosted international and regional neuroscience conferences",
               "Events conducted independently and jointly with the Department of Anatomy and the Microscopy Society of Singapore",
             ]}
@@ -215,13 +215,10 @@ export const History = () => {
               <Medal className="w-8 h-8 text-[#991b1b]" />
             </div>
             <h2 className="text-3xl font-bold text-slate-900 mb-4">
-              Awards & Honors
+              Awards & Honours
             </h2>
             <p className="text-lg text-slate-600 font-light max-w-2xl mx-auto">
-              Recognizing excellence and leadership in
-              neuroscience while maintaining clarity,
-              completeness, and archival accuracy.
-            </p>
+Recognising excellence and leadership in neuroscience while maintaining clarity, completeness, and archival accuracy.            </p>
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
@@ -262,8 +259,7 @@ export const History = () => {
             {/* Additional Awards Block */}
             <div className="p-8 md:p-12 bg-slate-50/50">
               <h3 className="text-xl font-bold text-slate-900 mb-8 text-center">
-                Distinguished Awards of the Singapore
-                Neuroscience Association
+                Awards Honouring Eminent Neuroscientists
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                 {[

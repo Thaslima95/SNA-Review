@@ -19,7 +19,7 @@ export const Footer = () => {
               Accelerating the understanding of the human brain through interdisciplinary collaboration, innovation, and open science in Singapore and beyond.
             </p>
             <div className="flex space-x-4">
-              {[Twitter, Linkedin, Github, Mail].map((Icon, i) => (
+              {[Linkedin, Mail].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-[#991b1b] transition-colors text-slate-300 hover:text-white">
                   <Icon size={18} />
                 </a>
@@ -27,26 +27,63 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div>
-            <h4 className="text-lg font-bold mb-6">Explore</h4>
-            <ul className="space-y-4 text-slate-400">
-              <li><Link to="/history" className="hover:text-[#991b1b] transition-colors">About Us</Link></li>
-              <li><Link to="/" className="hover:text-[#991b1b] transition-colors">Research Projects</Link></li>
-              <li><Link to="/seminars" className="hover:text-[#991b1b] transition-colors">Events & Conferences</Link></li>
-              <li><Link to="/contact" className="hover:text-[#991b1b] transition-colors">Membership</Link></li>
-              <li><Link to="/contact" className="hover:text-[#991b1b] transition-colors">Careers</Link></li>
-            </ul>
-          </div>
+         <div>
+  <h4 className="text-lg font-bold mb-6">Explore</h4>
+  <ul className="space-y-4 text-slate-400">
+
+  <li>
+    <Link to="/history" className="hover:text-[#991b1b] transition-colors">
+      About Us
+    </Link>
+  </li>
+
+  <li>
+    <Link to="/executives" className="hover:text-[#991b1b] transition-colors">
+      Executive Committee
+    </Link>
+  </li>
+
+  <li>
+    <Link to="/research" className="hover:text-[#991b1b] transition-colors">
+      Research
+    </Link>
+  </li>
+
+  <li>
+    <Link to="/contact" className="hover:text-[#991b1b] transition-colors">
+      Contact Us
+    </Link>
+  </li>
+
+</ul>
+
+</div>
+
           
           <div>
             <h4 className="text-lg font-bold mb-6">Resources</h4>
             <ul className="space-y-4 text-slate-400">
-              <li><Link to="/" className="hover:text-[#991b1b] transition-colors">Journal Publications</Link></li>
-              <li><Link to="/" className="hover:text-[#991b1b] transition-colors">Student Grants</Link></li>
-              <li><Link to="/" className="hover:text-[#991b1b] transition-colors">Open Data Sets</Link></li>
-              <li><Link to="/" className="hover:text-[#991b1b] transition-colors">Newsletters</Link></li>
-              <li><Link to="/contact" className="hover:text-[#991b1b] transition-colors">Contact Support</Link></li>
-            </ul>
+
+  <li>
+    <Link to="/seminars" className="hover:text-[#991b1b] transition-colors">
+      Seminars
+    </Link>
+  </li>
+
+  <li>
+    <Link to="/symposium-2026" className="hover:text-[#991b1b] transition-colors">
+      Symposium 2026
+    </Link>
+  </li>
+
+  <li>
+    <Link to="/brain-bee" className="hover:text-[#991b1b] transition-colors">
+      Brain Bee
+    </Link>
+  </li>
+
+</ul>
+
           </div>
         </div>
         
