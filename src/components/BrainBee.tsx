@@ -199,10 +199,10 @@ export const BrainBee = () => {
     </div>
 
     {/* Grid */}
-    <div className="grid md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto">
 
       {/* Card 1 – Eligibility */}
-      <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
+      <div className="md:col-span-4 bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
         <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
           <Users className="w-6 h-6 text-[#991b1b]" />
         </div>
@@ -230,7 +230,7 @@ export const BrainBee = () => {
       </div>
 
       {/* Card 2 – Registration */}
-      <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
+      <div className="md:col-span-4 bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
         <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
           <FileText className="w-6 h-6 text-[#991b1b]" />
         </div>
@@ -249,15 +249,16 @@ export const BrainBee = () => {
 
           <li className="flex items-start gap-2">
             <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              <strong className="text-slate-900 font-semibold">Email:</strong>{" "}
-              <a
-                href="mailto:singaporebrainbee2026@gmail.com"
-                className="text-[#991b1b] font-semibold hover:underline break-all"
-              >
-                singaporebrainbee2026@gmail.com
-              </a>
-            </span>
+            <span className="block">
+  <strong>Email:</strong>
+</span>
+<a
+  href="mailto:singaporebrainbee2026@gmail.com"
+  className="text-[#991b1b] font-semibold hover:underline whitespace-nowrap"
+>
+  singaporebrainbee2026@gmail.com
+</a>
+
           </li>
 
           <li className="flex items-start gap-2">
@@ -279,7 +280,7 @@ export const BrainBee = () => {
       </div>
 
       {/* Card 3 – Competition & Prizes */}
-      <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
+      <div className="md:col-span-4 bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
         <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
           <Award className="w-6 h-6 text-[#991b1b]" />
         </div>

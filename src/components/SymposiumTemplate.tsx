@@ -63,7 +63,7 @@ export interface SymposiumData {
 // --- Default Example Data (Updated for 2026) ---
 const defaultSymposiumData: SymposiumData = {
   year: "2026",
-  title: "Neuroscience across the Lifespan",
+  title: "Neuroscience Across the Lifespan",
   subtitle:
     "Neurodevelopment, Longevity and Mental Health",
   date: "June 30 – July 1, 2026",
@@ -268,7 +268,7 @@ export const SymposiumTemplate: React.FC<
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-96 h-96 bg-slate-100/60 rounded-full blur-3xl"></div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-slate-900">
             Symposium
           </h1>
@@ -303,15 +303,19 @@ export const SymposiumTemplate: React.FC<
             </div>
 
             {/* Text Content */}
-            <div className="flex-1 text-center md:text-left">
+            <div className="flex-1 text-center md:text-left ">
               <div className="inline-flex items-center space-x-2 bg-red-50 text-[#991b1b] px-4 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider mb-6">
                 <Calendar className="w-4 h-4" />
                 <span>{data.date}</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-4 tracking-tight leading-tight">
-                {data.title}
-              </h1>
+     <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold text-slate-900 mb-4 tracking-tight leading-[1.1] lg:whitespace-nowrap">
+  {data.title}
+</h1>
+
+
+
+
               <h2 className="text-xl md:text-2xl text-slate-600 font-light italic font-serif mb-8 border-l-4 border-[#991b1b] pl-6 md:ml-0 inline-block md:block text-left leading-normal">
                 {data.subtitle}
               </h2>
@@ -383,7 +387,7 @@ export const SymposiumTemplate: React.FC<
                   {data.speakers.map((speaker, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col p-4 rounded-lg bg-slate-50 border border-slate-100 hover:border-red-100 transition-colors"
+                      className="flex flex-col p-4 rounded-lg  border border-slate-100 hover:border-red-100 transition-colors"
                     >
                       <strong className="text-slate-900 font-bold text-lg">
                         {speaker.name}

@@ -13,9 +13,9 @@ export const Home = () => {
        <section className="py-20 bg-white">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <div className="max-w-3xl mx-auto text-center">
-             <h2 className="text-3xl font-bold text-slate-900 mb-6">About the Association</h2>
+             <h2 className="text-3xl font-bold text-slate-900 mb-6">About the Singapore Neuroscience Association</h2>
              <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-               The Singapore Neuroscience Association (SNA) is dedicated to fostering neuroscientific research and education. We bring together researchers, clinicians, and students to unravel the mysteries of the brain.
+               The Singapore Neuroscience Association  is dedicated to fostering neuroscience research and education. We bring together researchers, clinicians, educators, and students to explore the mysteries of the brain.
              </p>
              <Link to="/history" className="inline-flex items-center font-semibold text-[#991b1b] hover:underline">
                Read Our History <ArrowRight size={16} className="ml-2" />
@@ -189,7 +189,7 @@ SNA has set aside funds to support its members travelling to and presenting at i
                 {/* Event 2: Symposium */}
                 <Link to="/symposium" className="block p-6 bg-slate-50 rounded-xl border border-slate-100 hover:border-red-200 hover:bg-red-50/30 transition-all group">
                     <div className="text-xs font-bold text-[#991b1b] uppercase tracking-wider mb-2">Symposium</div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-[#991b1b]">Neuroscience across the Lifespan</h3>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-[#991b1b]">Neuroscience Across the Lifespan</h3>
                     <div className="flex items-center text-slate-500 text-sm">
                         <Calendar size={14} className="mr-2" /> June 30 – July 1, 2026
                     </div>

@@ -35,7 +35,7 @@ export const Hero = () => {
             </div>
             
             <p className="text-xl text-slate-600 mb-8 leading-relaxed max-w-lg">
-              We are a collective of researchers, students, and innovators dedicated to exploring the frontiers of the human brain and artificial intelligence.
+              We are a community of researchers, educators, and students dedicated to advancing neuroscience research, education, and collaboration in Singapore.
             </p>
             
             <div className="flex flex-wrap gap-4">

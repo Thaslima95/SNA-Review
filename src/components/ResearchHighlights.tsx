@@ -21,12 +21,12 @@ export const ResearchHighlights = () => {
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-96 h-96 bg-slate-100/60 rounded-full blur-3xl"></div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-slate-900 drop-shadow-sm">
             Research Highlights
           </h1>
           <div className="w-24 h-1.5 bg-[#991b1b] mx-auto mb-8 rounded-full shadow-sm"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-slate-600 max-w-5xl mx-auto font-light leading-relaxed">
             Showcasing groundbreaking neuroscientific research and discoveries from our community.
           </p>
         </div>

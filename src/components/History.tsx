@@ -35,12 +35,12 @@ export const History = () => {
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-96 h-96 bg-slate-100/60 rounded-full blur-3xl"></div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-slate-900">
             Our History
           </h1>
           <div className="w-24 h-1 bg-[#991b1b] mx-auto mb-8 rounded-full"></div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-slate-600 max-w-5xl mx-auto font-light leading-relaxed">
             Three decades of advancing neuroscience research,
             education, and collaboration in Singapore.
           </p>
@@ -53,14 +53,15 @@ export const History = () => {
           About the Singapore Neuroscience Association
         </h2>
         <div className="prose prose-lg prose-slate mx-auto font-serif leading-loose text-slate-700">
-          <p>
+          <p className="text-left">
             The Singapore Neuroscience Association (SNA) was
             established quietly on 29 January 1988 by Dr
             Laurence Garey and Dr Tan Choon Kim, and was
             formally published in the Singapore Government
             Gazette on 9 September 1988.
           </p>
-          <p>
+          <br />
+          <p className="text-left">
             In 2013, SNA commemorated its Silver Jubilee,
             marking 25 years of service to the neuroscience
             community. Today, the association continues to serve
@@ -245,7 +246,7 @@ Recognising excellence and leadership in neuroscience while maintaining clarity,
                 ].map((name) => (
                   <div
                     key={name}
-                    className="flex items-center space-x-4 bg-slate-50 p-3 rounded-lg hover:bg-red-50/50 transition-colors"
+                    className="flex items-center space-x-4  p-3 rounded-lg hover:bg-red-50/50 transition-colors"
                   >
                     <div className="w-2 h-2 rounded-full bg-[#991b1b] shrink-0"></div>
                     <span className="text-lg text-slate-800 font-medium">

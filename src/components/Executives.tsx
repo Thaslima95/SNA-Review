@@ -132,27 +132,20 @@ export const Executives = () => {
         <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-96 h-96 bg-slate-100/60 rounded-full blur-3xl"></div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-slate-900">
             Executive Committee
           </h1>
           <div className="w-24 h-1 bg-[#991b1b] mx-auto mb-8 rounded-full"></div>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
-            The dedicated scientists and clinicians guiding the strategic direction of the Singapore Neuroscience Association.
-          </p>
+          <p className="text-xl text-slate-600 font-light text-center md:whitespace-nowrap">
+  The dedicated scientists and clinicians guiding the strategic direction of the Singapore Neuroscience Association.
+</p>
+
         </div>
       </div>
 <section id="executives" className="py-24 bg-slate-50 font-sans text-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Header Section */}
-        {/* <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">Executive Committee</h2>
-          <div className="w-24 h-1 bg-[#991b1b] mx-auto mb-8 rounded-full"></div>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
-            The dedicated scientists and clinicians guiding the strategic direction of the Singapore Neuroscience Association.
-          </p>
-        </div> */}
 
         {/* Executives Grid */}
        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
