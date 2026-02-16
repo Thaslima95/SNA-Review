@@ -121,7 +121,7 @@ exports.handler = async (event) => {
                   </td>
 
                   <!-- EMPTY RIGHT FOR BALANCE -->
-                  <td width="180"></td>
+                
 
                 </tr>
               </table>
