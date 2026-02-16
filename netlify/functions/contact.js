@@ -82,26 +82,27 @@ exports.handler = async (event) => {
       subject:
         "Thank you for contacting the Singapore Neuroscience Association",
       html: `
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f8fafc; padding:40px 0;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f3f4f6; padding:40px 0;">
     <tr>
       <td align="center">
 
         <!-- MAIN CONTAINER -->
-        <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;">
+        <table width="600" cellpadding="0" cellspacing="0" 
+          style="background:#ffffff; border-radius:8px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
 
-          <!-- HEADER -->
+          <!-- HEADER (WHITE BACKGROUND) -->
           <tr>
-            <td style="background:#991b1b; padding:30px;" align="left">
+            <td align="center" style="padding:30px 20px; background:#ffffff; border-bottom:1px solid #e5e7eb;">
 
               <img
                 src="https://sna-review.netlify.app/sna-logo.png"
                 alt="Singapore Neuroscience Association"
-                width="140"
+                width="160"
                 border="0"
-                style="display:block; outline:none; text-decoration:none;"
+                style="display:block; margin:0 auto 20px auto;"
               />
 
-              <h2 style="color:#ffffff; margin:20px 0 0 0; font-family:Arial, sans-serif;">
+              <h2 style="color:#991b1b; margin:0; font-family:Arial, sans-serif; font-size:22px;">
                 Thank You for Your Enquiry
               </h2>
 
@@ -110,7 +111,7 @@ exports.handler = async (event) => {
 
           <!-- CONTENT -->
           <tr>
-            <td style="padding:30px; font-family:Arial, sans-serif; color:#374151; line-height:1.6;">
+            <td style="padding:35px 40px; font-family:Arial, sans-serif; color:#374151; line-height:1.7; font-size:15px;">
 
               <p style="margin-top:0;">Dear ${name},</p>
 
@@ -120,8 +121,14 @@ exports.handler = async (event) => {
               </p>
 
               <p>
-                If your enquiry is urgent, please contact us directly at:<br/>
-                <strong>secretariat@neuroscience.sg</strong>
+                If your enquiry is urgent, please contact us directly at:
+              </p>
+
+              <p style="margin:10px 0 20px 0;">
+                <a href="mailto:secretariat@neuroscience.sg" 
+                   style="color:#991b1b; font-weight:bold; text-decoration:none;">
+                  secretariat@neuroscience.sg
+                </a>
               </p>
 
               <p>
@@ -130,7 +137,7 @@ exports.handler = async (event) => {
 
               <p style="margin-top:30px;">
                 Kind regards,<br/>
-                Singapore Neuroscience Association
+                <strong>Singapore Neuroscience Association</strong>
               </p>
 
             </td>
@@ -138,9 +145,9 @@ exports.handler = async (event) => {
 
           <!-- FOOTER -->
           <tr>
-            <td style="background:#f3f4f6; padding:20px; font-size:12px; color:#6b7280; text-align:center; font-family:Arial, sans-serif;">
+            <td style="background:#f9fafb; padding:20px; font-size:12px; color:#6b7280; text-align:center; font-family:Arial, sans-serif;">
               This is an automated confirmation email.<br/>
-              Singapore Neuroscience Association
+              © ${new Date().getFullYear()} Singapore Neuroscience Association
             </td>
           </tr>
 

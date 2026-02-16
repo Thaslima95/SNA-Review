@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Navbar } from './components/Navbar';
 import { Home } from './components/Home';
 import { History } from './components/History';
-import { Executives } from './components/Executives';
+import { Executive } from './components/Executives';
 import { Seminars } from './components/Seminars';
 import { PhotoGallery } from './components/PhotoGallery';
 import { ResearchHighlights } from './components/ResearchHighlights';
@@ -35,7 +35,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/history" element={<History />} />
-            <Route path="/executives" element={<Executives />} />
+            <Route path="/executives" element={<Executive />} />
             <Route path="/seminars" element={<Seminars />} />
             <Route path="/brain-bee" element={<BrainBee />} />
             <Route path="/symposium-2026" element={<SymposiumTemplate />} />

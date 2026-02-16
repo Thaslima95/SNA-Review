@@ -13,6 +13,7 @@ import {
   Flag,
   FileText,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import brainBeePoster from "@/assets/brain-bee-poster-2.jpg";
 import brainBeeInfo from "@/assets/brain-bee-poster-1.jpg";
 
@@ -432,18 +433,21 @@ export const BrainBee = () => {
                     role="National Coordinator"
                     subRole="President, SNA"
                     dept="Department of Anatomy, Yong Loo Lin School of Medicine, NUS"
+                    slug="prof-s-thameem-dheen"
                 />
                  <CommitteeCard 
                     name="Dr Sara Kashkouli Rahmanzadeh"
                     role="Local Coordinator"
                     subRole="Honorary Secretary, SNA"
                     dept="Department of Anatomy, Yong Loo Lin School of Medicine, NUS"
+                    slug="dr-sara-kashkouli-rahmanzadeh"
                 />
                  <CommitteeCard 
                     name="Dr Deepika Kandilya"
                     role="Organising Secretary"
                     subRole="Honorary Treasurer, SNA"
                     dept="Department of Anatomy, Yong Loo Lin School of Medicine, NUS"
+                    slug="dr-deepika-kandilya"
                 />
             </div>
         </div>
@@ -491,21 +495,47 @@ const ProgrammeCard = ({ step, icon, title, description }: { step: string; icon:
     </div>
 );
 
-const CommitteeCard = ({ name, role, subRole, dept }: { name: string; role: string; subRole: string; dept: string }) => (
+const CommitteeCard = ({
+  name,
+  role,
+  subRole,
+  dept,
+    slug,
+}: {
+  name: string;
+  role: string;
+  subRole: string;
+  dept: string;
+  slug: string;
+}) => {
+  // Generate slug from name (for scroll targeting)
+
+  return (
     <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl hover:border-red-100 transition-all duration-300 flex flex-col h-full text-center items-center">
-        <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mb-6 mx-auto group">
-            <Users className="w-10 h-10 text-slate-400 group-hover:text-[#991b1b] transition-colors" />
+      <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center mb-6 mx-auto group">
+        <Users className="w-10 h-10 text-slate-400 group-hover:text-[#991b1b] transition-colors" />
+      </div>
+
+      <h3 className="text-lg font-bold text-slate-900 mb-3">{name}</h3>
+
+      <div className="mb-4 flex flex-col items-center gap-2">
+       <Link
+  to={`/executives#${slug}`}
+  className="inline-block px-4 py-1.5 bg-[#991b1b] text-white text-sm font-bold rounded-full tracking-wide shadow-sm hover:bg-[#7f1d1d] transition duration-200"
+>
+  {role}
+</Link>
+
+
+        <div className="text-slate-500 text-sm font-medium mt-1">
+          {subRole}
         </div>
-        <h3 className="text-lg font-bold text-slate-900 mb-3">{name}</h3>
-        
-        <div className="mb-4 flex flex-col items-center gap-2">
-            <span className="inline-block px-4 py-1.5 bg-[#991b1b] text-white text-sm font-bold rounded-full tracking-wide shadow-sm">
-                {role}
-            </span>
-            <div className="text-slate-500 text-sm font-medium mt-1">{subRole}</div>
-        </div>
-        
-        <div className="w-12 h-px bg-slate-100 mx-auto mb-4 mt-auto"></div>
-        <p className="text-slate-500 text-xs leading-relaxed">{dept}</p>
+      </div>
+
+      <div className="w-12 h-px bg-slate-100 mx-auto mb-4 mt-auto"></div>
+
+      <p className="text-slate-500 text-xs leading-relaxed">{dept}</p>
     </div>
-);
+  );
+};
+
