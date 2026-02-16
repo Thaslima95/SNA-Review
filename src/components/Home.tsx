@@ -156,9 +156,9 @@ Professor Barry Halliwell receives the SNA Lifetime Achievement Award.
                           <p className="text-red-100 mb-6 text-sm leading-relaxed">
 SNA has set aside funds to support its members travelling to and presenting at international neuroscience conferences.
                           </p>
-                          <button className="bg-white text-[#991b1b] px-4 py-2 rounded-lg font-bold text-sm hover:bg-red-50 transition-colors w-full">
+                          {/* <button className="bg-white text-[#991b1b] px-4 py-2 rounded-lg font-bold text-sm hover:bg-red-50 transition-colors w-full">
                              Apply for Award
-                          </button>
+                          </button> */}
                        </div>
                    </div>
                 </div>

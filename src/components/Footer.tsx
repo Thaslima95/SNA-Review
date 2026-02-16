@@ -18,13 +18,13 @@ export const Footer = () => {
             <p className="text-slate-400 max-w-sm mb-8 leading-relaxed">
               Accelerating the understanding of the human brain through interdisciplinary collaboration, innovation, and open science in Singapore and beyond.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               {[Linkedin, Mail].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-[#991b1b] transition-colors text-slate-300 hover:text-white">
                   <Icon size={18} />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
           
          <div>
