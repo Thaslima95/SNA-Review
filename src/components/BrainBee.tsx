@@ -44,6 +44,23 @@ export const BrainBee = () => {
           <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
             Inspiring the Next Generation of Neuroscientists
           </p>
+          <br />
+   <div className="mt-10 flex justify-center cursor-not-allowed">
+  <button
+  disabled
+  className="mt-10 px-8 py-2
+  text-lg font-semibold
+  rounded-full
+  bg-[#991b1b]
+  text-white
+  shadow-md
+  disabled:opacity-80"
+>
+  Registration Opening Soon
+</button>
+</div>
+
+
         </div>
       </div>
 

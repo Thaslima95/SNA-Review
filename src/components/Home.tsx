@@ -64,7 +64,7 @@ export const Home = () => {
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-end mb-10">
                 <h2 className="text-3xl font-bold text-slate-900">Research Highlights</h2>
-                <Link to="/" className="text-[#991b1b] font-semibold flex items-center hover:underline">
+                <Link to="/research" className="text-[#991b1b] font-semibold flex items-center hover:underline">
                     View All Research <ChevronRight size={16} />
                 </Link>
             </div>
