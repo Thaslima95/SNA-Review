@@ -100,7 +100,7 @@ exports.handler = async (event) => {
                   <!-- LOGO LEFT -->
                   <td width="180" align="left">
                     <img
-                      src="https://sna-review.netlify.app/sna-logo.png"
+                      src="http://cdn.mcauto-images-production.sendgrid.net/1686faa544bc2bca/ffd6948e-7e80-4246-bf73-51116e3c72e3/617x312.png"
                       alt="Singapore Neuroscience Association"
                       width="140"
                       style="display:block;"
