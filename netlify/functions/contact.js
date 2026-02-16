@@ -15,60 +15,73 @@ exports.handler = async (event) => {
       from: "nizuthasli15@gmail.com", // MUST be verified in SendGrid
       subject: "New Website Enquiry – Singapore Neuroscience Association",
       html: `
-      <body style="margin:0; padding:0; font-family:Arial,sans-serif; background:#f8fafc;">
-        <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0;">
+       <body style="margin:0; padding:0; font-family:Arial,sans-serif; background:#f8fafc;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="padding:40px 0;">
           <tr>
-            <td align="center">
-              <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+              <td style="background:#ffffff; padding:25px 30px; border-bottom:1px solid #e5e7eb;">
 
-                <!-- HEADER -->
-                <tr>
-                  <td style="background:#991b1b; padding:25px 30px;">
-<img
-  src="http://cdn.mcauto-images-production.sendgrid.net/1686faa544bc2bca/ffd6948e-7e80-4246-bf73-51116e3c72e3/617x312.png"
-  alt="Singapore Neuroscience Association"
-  width="140"
-  style="display:block;"
-/>
+                  <table width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
 
-                    <h2 style="color:#ffffff; margin:0;">
-                      New Contact Form Submission
-                    </h2>
-                  </td>
-                </tr>
+                          <!-- LOGO LEFT -->
+                          <td width="180" align="left">
+                              <img src="http://cdn.mcauto-images-production.sendgrid.net/1686faa544bc2bca/ffd6948e-7e80-4246-bf73-51116e3c72e3/617x312.png" alt="Singapore Neuroscience Association" width="140" style="display:block;" />
+                          </td>
 
-                <!-- CONTENT -->
-                <tr>
-                  <td style="padding:30px;">
-                    <p style="color:#374151;">A new enquiry has been received via the SNA website.</p>
+                          <!-- TITLE CENTER -->
+                          <td align="left">
+                              <h2 style="
+                      margin:0;
+                      font-family:Arial, sans-serif;
+                      font-size:22px;
+                      color:#991b1b;
+                      font-weight:700;
+                    ">
+                                  New Contact Form Submission
+                              </h2>
+                          </td>
 
-                    <p style="font-weight:bold; margin-top:20px;">Name</p>
-                    <p>${name}</p>
+                          <!-- EMPTY RIGHT FOR BALANCE -->
 
-                    <p style="font-weight:bold;">Email</p>
-                    <p><a href="mailto:${email}" style="color:#991b1b;">${email}</a></p>
 
-                    <p style="font-weight:bold;">Message</p>
-                    <div style="background:#f3f4f6; padding:15px; border-radius:8px;">
-                      ${message}
-                    </div>
-                  </td>
-                </tr>
+                      </tr>
+                  </table>
 
-                <!-- FOOTER -->
-                <tr>
-                  <td style="background:#f9fafb; padding:20px; font-size:12px; color:#6b7280; text-align:center;">
-                    Singapore Neuroscience Association<br/>
-                    28 Medical Drive, Centre for Life Sciences<br/>
-                    Singapore 117456
-                  </td>
-                </tr>
-
-              </table>
-            </td>
+              </td>
           </tr>
-        </table>
-      </body>
+
+          <!-- CONTENT -->
+          <tr>
+              <td style="padding:30px;">
+                  <p style="color:#374151;">A new enquiry has been received via the SNA website.</p>
+
+                  <p style="font-weight:bold; margin-top:20px;">Name</p>
+                  <p>${name}</p>
+
+                  <p style="font-weight:bold;">Email</p>
+                  <p><a href="mailto:${email}" style="color:#991b1b;">${email}</a></p>
+
+                  <p style="font-weight:bold;">Message</p>
+                  <div style="background:#f3f4f6; padding:15px; border-radius:8px;">
+                      ${message}
+                  </div>
+              </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+              <td style="background:#f9fafb; padding:20px; font-size:12px; color:#6b7280; text-align:center;">
+                  Singapore Neuroscience Association<br />
+                  28 Medical Drive, Centre for Life Sciences<br />
+                  Singapore 117456
+              </td>
+          </tr>
+
+      </table>
+      </td>
+      </tr>
+      </table>
+  </body>
       `,
     };
 
@@ -108,7 +121,7 @@ exports.handler = async (event) => {
                   </td>
 
                   <!-- TITLE CENTER -->
-                  <td align="center">
+                  <td align="left">
                     <h2 style="
                       margin:0;
                       font-family:Arial, sans-serif;
