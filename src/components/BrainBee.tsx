@@ -11,7 +11,10 @@ import {
   Building,
   Search,
   Flag,
+  FileText,
 } from "lucide-react";
+import brainBeePoster from "@/assets/brain-bee-poster-2.jpg";
+import brainBeeInfo from "@/assets/brain-bee-poster-1.jpg";
 
 export const BrainBee = () => {
   return (
@@ -19,10 +22,10 @@ export const BrainBee = () => {
       {/* 1. Page Banner */}
       <div className="relative py-24 overflow-hidden bg-gradient-to-br from-red-50 via-white to-slate-50">
         {/* Subtle Network Pattern Overlay */}
-        <div
+          <div
           className="absolute inset-0 z-0 opacity-[0.08] mix-blend-multiply"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1765046255517-412341954c4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaWdodCUyMGFic3RyYWN0JTIwbmV1cmFsJTIwbmV0d29yayUyMGxpbmVzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kJTIwbWluaW1hbHxlbnwxfHx8fDE3NzAzNTUxNzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2FkZW1pYyUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NzAzNjEwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             filter: "grayscale(100%) contrast(120%)",
@@ -66,7 +69,7 @@ export const BrainBee = () => {
             <FactCard
               icon={<Search className="w-5 h-5 text-[#991b1b]" />}
               label="Neuroscience Focus"
-              sublabel="Medicine & Research"
+              sublabel="Medicine and Research"
             />
           </div>
         </div>
@@ -123,21 +126,212 @@ export const BrainBee = () => {
              </div>
              
              {/* Key Stats Vertical Column */}
-             <div className="flex flex-row md:flex-col gap-4 shrink-0 min-w-[200px]">
-                 <div className="bg-slate-50 rounded-xl p-5 border border-slate-100 flex-1 text-center md:text-left">
-                    <div className="text-4xl font-bold text-[#991b1b] mb-1">120</div>
-                    <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Students</div>
-                 </div>
-                 <div className="bg-slate-50 rounded-xl p-5 border border-slate-100 flex-1 text-center md:text-left">
-                    <div className="text-4xl font-bold text-[#991b1b] mb-1">10</div>
-                    <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Schools</div>
-                 </div>
-                 <div className="text-xs text-slate-400 text-center md:text-left mt-2 italic px-1">
-                    *Participation in the most recent competition
-                 </div>
-             </div>
+              <div className="flex flex-wrap md:flex-col gap-4 sm:w-full md:w-auto md:min-w-[200px]">
+  
+  {/* 120 Students */}
+  <div className="bg-slate-50 rounded-xl p-5 border border-slate-100 flex-1 text-center md:text-left min-w-[48%] md:min-w-0">
+    <div className="text-4xl font-bold text-[#991b1b] mb-1">120</div>
+    <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Students</div>
+  </div>
+
+  {/* 10 Schools */}
+  <div className="bg-slate-50 rounded-xl p-5 border border-slate-100 flex-1 text-center md:text-left min-w-[48%] md:min-w-0">
+    <div className="text-4xl font-bold text-[#991b1b] mb-1">10</div>
+    <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">Schools</div>
+  </div>
+
+  {/* Footnote */}
+  <div className="w-full text-xs text-slate-400 text-center md:text-left mt-2 italic">
+    *Participation in the most recent competition
+  </div>
+
+</div>
+
            </div>
         </section>
+        {/* Official Posters Section */}
+            <section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12 flex flex-col items-center">
+          <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-8 text-center">
+            Official Brain Bee Challenge 2026 Poster
+          </h3>
+          <div className="flex flex-col gap-6 w-full max-w-2xl">
+            <img
+              src={brainBeeInfo}
+              alt="Singapore Brain Bee Challenge 2026 Information"
+              className="w-full h-auto rounded-lg shadow-sm"
+            />
+            <img
+              src={brainBeePoster}
+              alt="Singapore Brain Bee Challenge 2026 Poster"
+              className="w-full h-auto rounded-lg shadow-sm"
+            />
+          </div>
+        </section>
+        {/* Competition Information Section */}
+           <section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12">
+  <div className="flex flex-col gap-8">
+    
+    {/* Header */}
+    <div className="flex items-center gap-4 border-b border-slate-100 pb-4">
+      <div className="p-3 bg-red-50 rounded-xl">
+        <BookOpen className="w-8 h-8 text-[#991b1b]" />
+      </div>
+      <h2 className="text-2xl font-bold text-slate-900">
+        Competition Information
+      </h2>
+    </div>
+
+    {/* Grid */}
+    <div className="grid md:grid-cols-3 gap-6">
+
+      {/* Card 1 – Eligibility */}
+      <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
+        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
+          <Users className="w-6 h-6 text-[#991b1b]" />
+        </div>
+        <h3 className="text-lg font-bold text-slate-900 mb-4">Eligibility</h3>
+        <ul className="space-y-3 text-slate-600 font-serif text-sm leading-relaxed flex-grow">
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>Sec 2, Sec 3, O Level, JC1</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>Age: 14–18 years</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>Residing in Singapore</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              Students who previously participated in the International Championship are not eligible
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      {/* Card 2 – Registration */}
+      <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
+        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
+          <FileText className="w-6 h-6 text-[#991b1b]" />
+        </div>
+        <h3 className="text-lg font-bold text-slate-900 mb-4">Registration</h3>
+        <ul className="space-y-3 text-slate-600 font-serif text-sm leading-relaxed flex-grow">
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>Online registration</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>Signed form required</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              <strong className="text-slate-900 font-semibold">Email:</strong>{" "}
+              <a
+                href="mailto:singaporebrainbee2026@gmail.com"
+                className="text-[#991b1b] font-semibold hover:underline break-all"
+              >
+                singaporebrainbee2026@gmail.com
+              </a>
+            </span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              <strong className="text-slate-900 font-semibold">Deadline:</strong>{" "}
+              <span className="text-[#991b1b] font-semibold">
+                28 February 2026
+              </span>
+            </span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>No registration fee</span>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* Card 3 – Competition & Prizes */}
+      <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
+        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
+          <Award className="w-6 h-6 text-[#991b1b]" />
+        </div>
+        <h3 className="text-lg font-bold text-slate-900 mb-4">
+          Competition & Prizes
+        </h3>
+
+        <ul className="space-y-3 text-slate-600 font-serif text-sm leading-relaxed flex-grow">
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>Written and oral sections</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              Written questions based on “Neuroscience: Science of the Brain” and “Brain Facts”
+            </span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              <strong>1st Prize:</strong>{" "}
+              <span className="font-semibold text-[#991b1b]">SGD 500</span>
+            </span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              <strong>2nd Prize:</strong>{" "}
+              <span className="font-semibold text-[#991b1b]">SGD 300</span>
+            </span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              <strong>3rd Prize:</strong>{" "}
+              <span className="font-semibold text-[#991b1b]">SGD 200</span>
+            </span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>Top 10% receive Merit Certificates</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
+            <span>
+              <strong className="text-slate-900 font-semibold">
+                Tentative contest date:
+              </strong>{" "}
+              <span className="text-[#991b1b] font-semibold">
+                29 May 2026
+              </span>
+            </span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
       </div>
 
       {/* 4. Brain Bee 2026 Programme */}
@@ -199,7 +393,7 @@ export const BrainBee = () => {
              </h2>
 
              <h3 className="text-xl md:text-2xl font-serif text-slate-700 leading-snug max-w-3xl mx-auto italic">
-                “Students from all participating schools are warmly invited to attend these sessions.”
+                Students from all participating schools are warmly invited to attend these sessions.
              </h3>
         </div>
       </section>

@@ -21,10 +21,10 @@ export const History = () => {
       {/* 1. Page Banner */}
       <div className="relative py-24 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-slate-50">
         {/* Subtle Network Pattern Overlay */}
-        <div
+          <div
           className="absolute inset-0 z-0 opacity-[0.08] mix-blend-multiply"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1765046255517-412341954c4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsaWdodCUyMGFic3RyYWN0JTIwbmV1cmFsJTIwbmV0d29yayUyMGxpbmVzJTIwd2hpdGUlMjBiYWNrZ3JvdW5kJTIwbWluaW1hbHxlbnwxfHx8fDE3NzAxODczMjV8MA&ixlib=rb-4.1.0&q=80&w=1080')`,
+            backgroundImage: `url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2FkZW1pYyUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NzAzNjEwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             filter: "grayscale(100%) contrast(120%)",

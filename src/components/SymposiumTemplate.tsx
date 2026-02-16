@@ -120,7 +120,7 @@ const defaultSymposiumData: SymposiumData = {
     {
       name: "Dr Leena Ali Ibrahim",
       institution:
-        "King Abdullah University of Science and Technology",
+        "King Abdullah University of Science and Technology (KAUST)",
       country: "Saudi Arabia",
     },
     {
@@ -149,7 +149,7 @@ const defaultSymposiumData: SymposiumData = {
       country: "UAE",
     },
     {
-      name: "Dr Soham Chanda",
+      name: "A/Prof Soham Chanda",
       institution: "Colorado State University",
       country: "USA",
     },
@@ -217,13 +217,13 @@ const defaultSymposiumData: SymposiumData = {
     language:
       "The official language of the conference is English.",
     weather:
-      "Singapore enjoys a tropical climate (25°C - 31°C).",
-    visaInfo: "Check ICA website for visa requirements.",
+      "Singapore enjoys a tropical climate (25°C–31°C).",
+    visaInfo: "Please check the ICA website for visa requirements.",
     visaLink: "https://www.ica.gov.sg",
     safetyInfo:
       "Singapore is a safe city; standard precautions apply.",
     disclaimer:
-      "Organisers are not liable for personal accidents or loss of property.",
+      "Organisers are not liable for personal injury, accidents or loss of property.",
   },
   venue: {
     name: "MD11, CRC Auditorium",
