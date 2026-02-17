@@ -250,11 +250,11 @@ const defaultSymposiumData: SymposiumData = {
     members: ["Dr. Jai Polepalli"],
   },
   {
-    role: "Organizing Secretary",
+    role: "Organising Secretary",
     members: ["Dr. Sara Kashkouli Rahmanzadeh"],
   },
   {
-    role: "Organizing Team",
+    role: "Organising Team",
     members: [
       "Assoc. Prof. Gavin Dawe",
       "Prof. Ong Wei Yi",
@@ -265,6 +265,7 @@ const defaultSymposiumData: SymposiumData = {
     ],
   },
 ]
+
 ,
   conferenceInfo: {
     language:
