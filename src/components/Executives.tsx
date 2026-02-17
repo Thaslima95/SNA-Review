@@ -35,7 +35,7 @@ const executives: Executive[] = [
     role: "Vice President",
     affiliation: "YLL School of Medicine",
     img: gavin,
-    email: "phchead@nus.edu.sg",
+    email: "phcdgs@nus.edu.sg",
   },
   {
     name: "Dr. Sara Kashkouli Rahmanzadeh",
