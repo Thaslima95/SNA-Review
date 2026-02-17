@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Mail, Copy, Linkedin } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
-import thameem from "@/assets/executives/thameem.jpg";
+import thameem from "@/assets/executives/thameem-2.png";
 import gavin from "@/assets/executives/gavin.jpg";
 import sara from "@/assets/executives/sara.jpg";
 import deepika from "@/assets/executives/deepika.jpg";
@@ -135,6 +135,15 @@ export const Executive = () => {
     <div className="bg-slate-50 min-h-screen font-sans text-slate-900">
       {/* Banner */}
       <div className="relative py-24 bg-gradient-to-br from-blue-50 via-white to-slate-50">
+        <div
+          className="absolute inset-0 z-0 opacity-[0.08] mix-blend-multiply"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2FkZW1pYyUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NzAzNjEwMDB8MA&ixlib=rb-4.1.0&q=80&w=1080')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            filter: "grayscale(100%) contrast(120%)",
+          }}
+        ></div>
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Executive Committee

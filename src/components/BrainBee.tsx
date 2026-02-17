@@ -18,6 +18,59 @@ import brainBeePoster from "@/assets/brain-bee-poster-2.jpg";
 import brainBeeInfo from "@/assets/brain-bee-poster-1.jpg";
 
 export const BrainBee = () => {
+  /* ========================================
+   🔥 DATA-DRIVEN CONFIGURATION
+======================================== */
+
+const competitionData = [
+  {
+    title: "Eligibility",
+    icon: <Users className="w-6 h-6 text-[#991b1b]" />,
+    items: [
+      "Sec 2, Sec 3, O Level, JC1",
+      "Age: 14–18 years",
+      "Residing in Singapore",
+      "Students who previously participated in the International Championship are not eligible",
+    ],
+  },
+  {
+    title: "Registration",
+    icon: <FileText className="w-6 h-6 text-[#991b1b]" />,
+    items: [
+      "Online registration",
+      "Signed form required",
+      {
+        type: "email",
+        label: "Email:",
+        value: "singaporebrainbee2026@gmail.com",
+      },
+      {
+        type: "deadline",
+        label: "Deadline:",
+        value: "28 February 2026",
+      },
+      "No registration fee",
+    ],
+  },
+  {
+    title: "Competition & Prizes",
+    icon: <Award className="w-6 h-6 text-[#991b1b]" />,
+    items: [
+      "Written and oral sections",
+      "Written questions based on “Neuroscience: Science of the Brain” and “Brain Facts”",
+      { type: "prize", label: "1st Prize:", value: "SGD 500" },
+      { type: "prize", label: "2nd Prize:", value: "SGD 300" },
+      { type: "prize", label: "3rd Prize:", value: "SGD 200" },
+      "Top 10% receive Merit Certificates",
+      {
+        type: "date",
+        label: "Tentative contest date:",
+        value: "29 May 2026",
+      },
+    ],
+  },
+];
+
   return (
     <div className="bg-slate-50 min-h-screen font-sans text-slate-900">
       {/* 1. Page Banner */}
@@ -45,8 +98,7 @@ export const BrainBee = () => {
           <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
             Inspiring the Next Generation of Neuroscientists
           </p>
-          <br />
-   <div className="mt-10 flex justify-center cursor-not-allowed">
+   <div className="mt-5 flex justify-center cursor-not-allowed">
   <button
   disabled
   className="mt-10 px-8 py-2
@@ -186,170 +238,33 @@ export const BrainBee = () => {
           </div>
         </section>
         {/* Competition Information Section */}
-           <section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12">
-  <div className="flex flex-col gap-8">
-    
-    {/* Header */}
-    <div className="flex items-center gap-4 border-b border-slate-100 pb-4">
-      <div className="p-3 bg-red-50 rounded-xl">
-        <BookOpen className="w-8 h-8 text-[#991b1b]" />
-      </div>
-      <h2 className="text-2xl font-bold text-slate-900">
-        Competition Information
-      </h2>
-    </div>
+                   <section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 md:p-12">
+          <div className="flex flex-col gap-8">
+            {/* Header */}
+            <div className="flex items-center gap-4 border-b border-slate-100 pb-4">
+              <div className="p-3 bg-red-50 rounded-xl">
+                <BookOpen className="w-8 h-8 text-[#991b1b]" />
+              </div>
+              <h2 className="text-2xl font-bold text-slate-900">
+                Competition Information
+              </h2>
+            </div>
 
-    {/* Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto">
-
-      {/* Card 1 – Eligibility */}
-      <div className="md:col-span-4 bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
-        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
-          <Users className="w-6 h-6 text-[#991b1b]" />
-        </div>
-        <h3 className="text-lg font-bold text-slate-900 mb-4">Eligibility</h3>
-        <ul className="space-y-3 text-slate-600 font-serif text-sm leading-relaxed flex-grow">
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>Sec 2, Sec 3, O Level, JC1</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>Age: 14–18 years</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>Residing in Singapore</span>
-          </li>
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              Students who previously participated in the International Championship are not eligible
-            </span>
-          </li>
-        </ul>
-      </div>
-
-      {/* Card 2 – Registration */}
-      <div className="md:col-span-4 bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
-        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
-          <FileText className="w-6 h-6 text-[#991b1b]" />
-        </div>
-        <h3 className="text-lg font-bold text-slate-900 mb-4">Registration</h3>
-        <ul className="space-y-3 text-slate-600 font-serif text-sm leading-relaxed flex-grow">
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>Online registration</span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>Signed form required</span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span className="block">
-  <strong>Email:</strong>
-</span>
-<a
-  href="mailto:singaporebrainbee2026@gmail.com"
-  className="text-[#991b1b] font-semibold hover:underline whitespace-nowrap"
->
-  singaporebrainbee2026@gmail.com
-</a>
-
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              <strong className="text-slate-900 font-semibold">Deadline:</strong>{" "}
-              <span className="text-[#991b1b] font-semibold">
-                28 February 2026
-              </span>
-            </span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>No registration fee</span>
-          </li>
-
-        </ul>
-      </div>
-
-      {/* Card 3 – Competition & Prizes */}
-      <div className="md:col-span-4 bg-slate-50 rounded-xl p-6 border border-slate-100 h-full flex flex-col">
-        <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200 shadow-sm">
-          <Award className="w-6 h-6 text-[#991b1b]" />
-        </div>
-        <h3 className="text-lg font-bold text-slate-900 mb-4">
-          Competition & Prizes
-        </h3>
-
-        <ul className="space-y-3 text-slate-600 font-serif text-sm leading-relaxed flex-grow">
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>Written and oral sections</span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              Written questions based on “Neuroscience: Science of the Brain” and “Brain Facts”
-            </span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              <strong>1st Prize:</strong>{" "}
-              <span className="font-semibold text-[#991b1b]">SGD 500</span>
-            </span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              <strong>2nd Prize:</strong>{" "}
-              <span className="font-semibold text-[#991b1b]">SGD 300</span>
-            </span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              <strong>3rd Prize:</strong>{" "}
-              <span className="font-semibold text-[#991b1b]">SGD 200</span>
-            </span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>Top 10% receive Merit Certificates</span>
-          </li>
-
-          <li className="flex items-start gap-2">
-            <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2 shrink-0"></div>
-            <span>
-              <strong className="text-slate-900 font-semibold">
-                Tentative contest date:
-              </strong>{" "}
-              <span className="text-[#991b1b] font-semibold">
-                29 May 2026
-              </span>
-            </span>
-          </li>
-
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
+            {/* Grid */}
+            <div className="w-full max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 gap-6">
+                {competitionData.map((card, index) => (
+                  <CompetitionCard
+                    key={index}
+                    icon={card.icon}
+                    title={card.title}
+                    items={card.items}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
       </div>
 
@@ -538,4 +453,81 @@ const CommitteeCard = ({
     </div>
   );
 };
+
+/* ========================================
+   🔥 REUSABLE CARD COMPONENT
+======================================== */
+
+const CompetitionCard = ({
+  icon,
+  title,
+  items,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  items: any[];
+}) => (
+  <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col h-full hover:border-red-100 transition-colors duration-300">
+    <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 border border-slate-200 shadow-sm shrink-0">
+      {React.cloneElement(icon as React.ReactElement, {
+        className: "w-7 h-7 text-[#991b1b]",
+      })}
+    </div>
+
+    <h3 className="text-xl font-bold text-slate-900 mb-6">{title}</h3>
+
+    <ul className="space-y-4 text-slate-600 font-serif text-base leading-relaxed flex-grow">
+      {items.map((item, index) => (
+        <li key={index} className="flex items-start gap-4">
+          <div className="w-1.5 h-1.5 bg-[#991b1b] rounded-full mt-2.5 shrink-0"></div>
+
+          <span className="min-w-0">
+            {typeof item === "string" && item}
+
+            {item.type === "email" && (
+              <>
+                <strong>{item.label}</strong>{" "}
+                <a
+                  href={`mailto:${item.value}`}
+                  className="text-[#991b1b] font-semibold hover:underline break-all"
+                >
+                  {item.value}
+                </a>
+              </>
+            )}
+
+            {item.type === "deadline" && (
+              <>
+                <strong className="text-slate-900">{item.label}</strong>{" "}
+                <span className="text-[#991b1b] font-semibold">
+                  {item.value}
+                </span>
+              </>
+            )}
+
+            {item.type === "prize" && (
+              <>
+                <strong>{item.label}</strong>{" "}
+                <span className="text-[#991b1b] font-semibold">
+                  {item.value}
+                </span>
+              </>
+            )}
+
+            {item.type === "date" && (
+              <>
+                <strong className="text-slate-900">{item.label}</strong>{" "}
+                <span className="text-[#991b1b] font-semibold">
+                  {item.value}
+                </span>
+              </>
+            )}
+          </span>
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+
 

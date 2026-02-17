@@ -70,25 +70,89 @@ const defaultSymposiumData: SymposiumData = {
   location: "MD11, CRC Auditorium, NUS Medicine",
   posterUrl: posterImage,
   overview: (
-    <>
-      <p className="mb-4">
-        We are delighted to announce the "Neuroscience across
-        the Lifespan" Symposium, focusing on the critical
-        intersection of neurodevelopment, longevity, and mental
-        health. This event brings together world-renowned
-        experts to discuss how neural mechanisms evolve across
-        the lifespan and their implications for health and
-        disease.
-      </p>
-      <p>
-        The symposium will feature a diverse lineup of
-        international and local speakers sharing cutting-edge
-        research. Attendees will have the opportunity to engage
-        with the latest findings in the field, from early brain
-        development to aging and neurodegeneration.
-      </p>
-    </>
-  ),
+  <>
+    {/* Highlight Row */}
+   {/* Highlight Row */}
+<div className="mt-6 mb-8 space-y-4">
+
+  <div className="flex flex-wrap items-center gap-4">
+    <span className="inline-flex items-center px-4 py-2 bg-red-50 text-red-700 text-sm font-semibold rounded-full">
+      <span className="mr-2">📅</span>
+      30 June–1 July 2026
+    </span>
+
+    <span className="inline-flex items-center px-4 py-2 bg-slate-100 text-slate-700 text-sm font-semibold rounded-full">
+      <span className="mr-2">📍</span>
+      MD11, CRC Auditorium, NUS Medicine
+    </span>
+  </div>
+
+  <div>
+    <span className="inline-flex items-center px-4 py-2 bg-emerald-50 text-emerald-700 text-sm font-semibold rounded-full">
+      <span className="mr-2">💰</span>
+      Academic Registration is Free
+    </span>
+  </div>
+
+</div>
+
+
+    <p className="mb-4">
+      Join us at the{" "}
+      <span className="font-semibold text-slate-900">
+        Neuroscience Across the Lifespan Symposium
+      </span>{" "}
+      (30 June–1 July 2026, MD11, CRC Auditorium, NUS Medicine), organized by{" "}
+      <span className="font-semibold">
+        Singapore Neuroscience Association
+      </span>{" "}
+      and the Department of Anatomy, NUS Medicine.
+    </p>
+
+    <p className="mb-4">
+      Across two days, the symposium will explore topics ranging from{" "}
+      <span className="font-medium text-slate-900">
+        neurodevelopment to aging and longevity
+      </span>
+      , bringing together local and international experts for enriching scientific exchange.
+    </p>
+
+    <p>
+      Academic registration is{" "}
+      <span className="font-semibold text-emerald-700">
+        free
+      </span>
+      , and we welcome trainee and early-career abstracts for poster presentations, with selected submissions invited for short oral presentations in our{" "}
+      <span className="font-semibold text-red-700">
+        Young Scientist Oral Session
+      </span>{" "}
+      (poster and abstract details shall be shared to interested registrants). Queries can be submitted during registration at{" "}
+    
+<a
+  href="https://bit.ly/snasymposium2026"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="font-semibold text-red-600 underline decoration-2 underline-offset-4 hover:text-red-700"
+>
+  https://bit.ly/snasymposium2026
+</a>
+
+
+    </p>
+
+    {/* Optional CTA Button (can keep or remove) */}
+    <a
+      href="https://bit.ly/snasymposium2026"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-6 px-6 py-2 bg-red-600 text-white font-semibold rounded-lg shadow hover:bg-red-700 transition"
+    >
+      Register Now
+    </a>
+  </>
+),
+
+
   registrationLink: "https://bit.ly/snasymposium2026",
   // registrationStatus: "Registration details to be shared soon", // Removed to show button
   speakers: [
