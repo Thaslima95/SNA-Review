@@ -12,10 +12,13 @@ import {
   Search,
   Flag,
   FileText,
+  Download 
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import brainBeePoster from "@/assets/brain-bee-poster-2.jpg";
 import brainBeeInfo from "@/assets/brain-bee-poster-1.jpg";
+import brainBeePosterPDF from "@/assets/brain-bee-poster-2026.pdf";
+
 
 export const BrainBee = () => {
   /* ========================================
@@ -221,22 +224,55 @@ const competitionData = [
         </section>
         {/* Official Posters Section */}
             <section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12 flex flex-col items-center">
-          <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-8 text-center">
-            Official Brain Bee Challenge 2026 Poster
-          </h3>
-          <div className="flex flex-col gap-6 w-full max-w-2xl">
-            <img
-              src={brainBeeInfo}
-              alt="Singapore Brain Bee Challenge 2026 Information"
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
-            <img
-              src={brainBeePoster}
-              alt="Singapore Brain Bee Challenge 2026 Poster"
-              className="w-full h-auto rounded-lg shadow-sm"
-            />
-          </div>
-        </section>
+
+  {/* Section Title */}
+  <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider text-center">
+    Official Brain Bee Challenge 2026 Poster
+  </h3>
+
+  {/* Subtle Divider */}
+  <div className="w-16 h-1 bg-slate-200 rounded-full my-6"></div>
+
+  {/* Poster Container */}
+  <div className="flex flex-col gap-8 w-full max-w-3xl">
+
+    <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300">
+      <img
+        src={brainBeeInfo}
+        alt="Singapore Brain Bee Challenge 2026 Information"
+        className="w-full h-auto rounded-lg"
+      />
+    </div>
+
+    <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition duration-300">
+      <img
+        src={brainBeePoster}
+        alt="Singapore Brain Bee Challenge 2026 Poster"
+        className="w-full h-auto rounded-lg"
+      />
+    </div>
+
+  </div>
+
+  {/* Download Button */}
+ <div className="mt-10 flex flex-col items-center">
+
+  <a
+    href={brainBeePosterPDF}
+    download
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center px-8 py-3 bg-[#991b1b] text-white font-semibold rounded-lg shadow-lg hover:bg-[#7f1d1d] hover:shadow-xl transition-all duration-300"
+  >
+    <Download className="w-5 h-5 mr-3" />
+    <span>Download High-Resolution Poster (PDF)</span>
+  </a>
+
+</div>
+
+
+</section>
+
         {/* Competition Information Section */}
                    <section className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 md:p-12">
           <div className="flex flex-col gap-8">
