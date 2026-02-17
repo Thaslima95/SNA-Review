@@ -247,7 +247,7 @@ const defaultSymposiumData: SymposiumData = {
   },
   {
     role: "Scientific Committee Chair",
-    members: ["Dr. Jai Polepalli","A/P Gavin Dawe","Prof Ong Wei Yi","A/P Dinesh Kumar"],
+    members: ["Dr. Jai Polepalli (Chair)","A/P Gavin Dawe","Prof Ong Wei Yi","A/P Dinesh Kumar"],
   },
   {
     role: "Organising Secretary",
