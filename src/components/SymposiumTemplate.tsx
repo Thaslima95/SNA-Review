@@ -241,42 +241,31 @@ const defaultSymposiumData: SymposiumData = {
   ],
 
   committee: [
-    {
-      role: "Chairperson",
-      members: ["Prof. S. Thameem Dheen"],
-    },
-    {
-      role: "Scientific Committee",
-      members: [
-        "Prof. Barry Halliwell (Chair)",
-        "Assoc. Prof. Gavin Dawe",
-        "Dr. Sara Kashkouli Rahmanzadeh",
-      ],
-    },
-    {
-      role: "Secretary",
-      members: ["Dr. Sara Kashkouli Rahmanzadeh"],
-    },
-    {
-      role: "Treasurer",
-      members: ["Dr. Deepika Kandilya"],
-    },
-    {
-      role: "Committee Members",
-      members: [
-        "Prof. Ong Wei Yi",
-        "Assoc. Prof. Dinesh Kumar Srinivasan",
-        "Dr. Jai Polepalli",
-        "Dr. Satish R. L.",
-        "Dr. K. Jayabharathi",
-        "Dr. Kevin Jayaraj",
-      ],
-    },
-    {
-      role: "Advisory Board",
-      members: ["Prof. Ling Eng Ang", "Prof. Soong Tuck Wah"],
-    },
-  ],
+  {
+    role: "Chairperson",
+    members: ["Prof. S. Thameem Dheen"],
+  },
+  {
+    role: "Scientific Committee Chair",
+    members: ["Dr. Jai Polepalli"],
+  },
+  {
+    role: "Organizing Secretary",
+    members: ["Dr. Sara Kashkouli Rahmanzadeh"],
+  },
+  {
+    role: "Organizing Team",
+    members: [
+      "Assoc. Prof. Gavin Dawe",
+      "Prof. Ong Wei Yi",
+      "Assoc. Prof. Dinesh Kumar Srinivasan",
+      "Dr. Satish R. L.",
+      "Dr. K. Jayabharathi",
+      "Dr. Kevin Jayaraj",
+    ],
+  },
+]
+,
   conferenceInfo: {
     language:
       "The official language of the conference is English.",
