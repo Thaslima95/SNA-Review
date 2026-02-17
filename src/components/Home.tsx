@@ -33,7 +33,7 @@ export const Home = () => {
                  <Calendar className="w-4 h-4" />
                  <span>June 30 – July 1, 2026</span>
                </div>
-               <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-3 leading-tight">Neuroscience across the Lifespan</h2>
+               <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-3 leading-tight">Neuroscience Across the Lifespan</h2>
                <h3 className="text-xl md:text-2xl text-slate-600 font-serif italic mb-6 border-l-4 border-[#991b1b] pl-4">
                  Neurodevelopment, Longevity, and Mental Health Symposium
                </h3>
