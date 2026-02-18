@@ -260,7 +260,7 @@ const defaultSymposiumData: SymposiumData = {
     members: ["Dr. Kevin Jayaraj"],
   },
   {
-    role: "Organising Committee Members",
+    role: "Members",
     members: [
       "Dr. Jayabharathi Krishnan",
       "Dr. Wu Yajun",
