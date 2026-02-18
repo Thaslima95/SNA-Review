@@ -243,19 +243,9 @@ const defaultSymposiumData: SymposiumData = {
   committee:[
   {
     role: "Chairperson",
-    members: ["Prof. S. Thameem Dheen"],
-  },
-  {
-    role: "Co-Chair",
-    members: ["Assoc. Prof. Gavin Dawe"],
-  },
-  {
-    role: "Scientific Committee",
     members: [
-      "Dr. Jai Polepalli (Chair)",
-      "Assoc. Prof. Gavin Dawe",
-      "Prof. Ong Wei Yi",
-      "Assoc. Prof. Dinesh Kumar Srinivasan",
+      "Prof. S. Thameem Dheen (Chair)",
+      "Assoc. Prof. Gavin Dawe (Co-Chair)",
     ],
   },
   {
@@ -275,6 +265,7 @@ const defaultSymposiumData: SymposiumData = {
       "Dr. Jayabharathi Krishnan",
       "Dr. Wu Yajun",
       "Dr. Chandrika Muthukrishnan",
+      "Dr. Satish LR",
       "Emmanuel Jean Paul Burot",
       "Shamini Sowpurnica Chandran Babu",
       "Mukta Sandeep Tashildar",
@@ -284,7 +275,6 @@ const defaultSymposiumData: SymposiumData = {
     ],
   },
 ]
-
 ,
   conferenceInfo: {
     language:
