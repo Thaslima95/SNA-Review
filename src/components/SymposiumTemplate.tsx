@@ -249,6 +249,15 @@ const defaultSymposiumData: SymposiumData = {
     ],
   },
   {
+    role: "Scientific Committee",
+    members: [
+      "Dr. Jai Polepalli (Chair)",
+      "Assoc. Prof. Gavin Dawe",
+      "Prof. Ong Wei Yi",
+      "Assoc. Prof. Dinesh Kumar Srinivasan",
+    ],
+  },
+  {
     role: "Organising Secretaries",
     members: [
       "Dr. Deepika Kandilya",
