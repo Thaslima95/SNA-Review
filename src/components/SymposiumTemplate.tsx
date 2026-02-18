@@ -240,28 +240,47 @@ const defaultSymposiumData: SymposiumData = {
     
   ],
 
-  committee: [
+  committee:[
   {
     role: "Chairperson",
     members: ["Prof. S. Thameem Dheen"],
   },
   {
+    role: "Co-Chair",
+    members: ["Assoc. Prof. Gavin Dawe"],
+  },
+  {
     role: "Scientific Committee",
-    members: ["Dr. Jai Polepalli (Chair)","A/P Gavin Dawe","Prof Ong Wei Yi","A/P Dinesh Kumar"],
-  },
-  {
-    role: "Organising Secretary",
-    members: ["Dr. Sara Kashkouli Rahmanzadeh"],
-  },
-  {
-    role: "Organising Team",
     members: [
+      "Dr. Jai Polepalli (Chair)",
       "Assoc. Prof. Gavin Dawe",
       "Prof. Ong Wei Yi",
       "Assoc. Prof. Dinesh Kumar Srinivasan",
-      "Dr. Satish R. L.",
-      "Dr. K. Jayabharathi",
-      "Dr. Kevin Jayaraj",
+    ],
+  },
+  {
+    role: "Organising Secretaries",
+    members: [
+      "Dr. Deepika Kandilya",
+      "Dr. Sara Kashkouli Rahmanzadeh",
+    ],
+  },
+  {
+    role: "Deputy Secretary",
+    members: ["Dr. Kevin Jayaraj"],
+  },
+  {
+    role: "Organising Committee Members",
+    members: [
+      "Dr. Jayabharathi Krishnan",
+      "Dr. Wu Yajun",
+      "Dr. Chandrika Muthukrishnan",
+      "Emmanuel Jean Paul Burot",
+      "Shamini Sowpurnica Chandran Babu",
+      "Mukta Sandeep Tashildar",
+      "Vanshika Tallamraju",
+      "Harshini Marri",
+      "Mohammad Irfan Bin Rozaimi",
     ],
   },
 ]
