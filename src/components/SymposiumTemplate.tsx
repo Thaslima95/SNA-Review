@@ -246,7 +246,7 @@ const defaultSymposiumData: SymposiumData = {
     members: ["Prof. S. Thameem Dheen"],
   },
   {
-    role: "Scientific Committee Chair",
+    role: "Scientific Committee",
     members: ["Dr. Jai Polepalli (Chair)","A/P Gavin Dawe","Prof Ong Wei Yi","A/P Dinesh Kumar"],
   },
   {
