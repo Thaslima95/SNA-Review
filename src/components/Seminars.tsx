@@ -16,7 +16,7 @@ import ling2 from "@/assets/seminar_speakers/ling-2.jpg";
 import ranga from "@/assets/seminar_speakers/ranga.jpg";
 import ranga2 from "@/assets/seminar_speakers/ranga-2.webp";
 import sukku from "@/assets/seminar_speakers/sukku.jpg";
-import sukk2 from "@/assets/seminar_speakers/sukanya-1.jpg";
+import sukk2 from "@/assets/seminar_speakers/Sukanya-1.jpg";
 import wong from "@/assets/seminar_speakers/wong.jpg";
 import wong2 from "@/assets/seminar_speakers/wong-2.jfif";
 
