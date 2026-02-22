@@ -5,7 +5,7 @@
   import PasswordGate from "./components/PasswordGate";
 
 
-  createRoot(document.getElementById("root")!).render(<PasswordGate>
+  createRoot(document.getElementById("root")!).render(
   <App />
-</PasswordGate>);
+);
   

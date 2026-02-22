@@ -8,11 +8,11 @@ const navItems = [
   { name: 'Home', path: '/' },
   { name: 'History', path: '/history' },
   { name: 'Executives', path: '/executives' },
-  // { name: 'Seminars', path: '/seminars' },
+  { name: 'Seminars', path: '/seminars' },
   { name: 'Symposium', path: '/symposium-2026' },
   // { name: 'Photo Gallery', path: '/gallery' },
   { name: 'Research Highlights', path: '/research' },
-  // { name: 'Newsletters', path: '/newsletters' },
+  { name: 'Newsletters', path: '/newsletters' },
   // { name: 'IBRO-APRC', path: '/ibro-aprc' },
   { name: 'Brain Bee', path: '/brain-bee' },
   { name: 'Contact Us', path: '/contact' }

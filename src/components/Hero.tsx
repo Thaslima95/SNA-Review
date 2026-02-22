@@ -44,7 +44,7 @@ export const Hero = () => {
                 <ArrowRight size={18} />
               </Link>
               <Link to="/seminars" className="px-8 py-4 rounded-xl border border-slate-200 bg-white text-slate-700 hover:border-red-200 hover:bg-red-50 transition-all font-medium flex items-center justify-center">
-                Upcoming Seminars
+                Seminars
               </Link>
             </div>
           </motion.div>

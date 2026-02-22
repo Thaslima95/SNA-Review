@@ -13,7 +13,7 @@ import {
   Users,
   Mic,
 } from "lucide-react";
-import posterImage from "@/assets/Poster1_SNA Symposium 2026-v7r.jpg";
+import posterImage from "@/assets/Poster1_SNA Symposium 2026-v8.jpg";
 
 // --- Type Definitions for Reusability ---
 export interface CommitteeGroup {
@@ -202,6 +202,12 @@ const defaultSymposiumData: SymposiumData = {
       institution: "BRIC - National Brain Research Center",
       country: "India",
     },
+    {
+      name: "Dr Derrick Ong",
+      institution: "NUS Medicine",
+      country: "Singapore",
+    },
+
     {
       name: "Dr John Chua",
       institution: "NUS Medicine",
