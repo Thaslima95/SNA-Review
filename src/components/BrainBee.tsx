@@ -20,7 +20,7 @@ import brainBeeInfo from "@/assets/brain-bee-poster-1.jpg";
 import brainBeePosterPDF from "@/assets/brain-bee-poster-2026.pdf";
 
 
-export const BrainBee = () => {
+const BrainBee = () => {
   /* ========================================
    🔥 DATA-DRIVEN CONFIGURATION
 ======================================== */
@@ -265,7 +265,7 @@ const competitionData = [
     className="inline-flex items-center px-8 py-3 bg-[#991b1b] text-white font-semibold rounded-lg shadow-lg hover:bg-[#7f1d1d] hover:shadow-xl transition-all duration-300"
   >
     <Download className="w-5 h-5 mr-3" />
-    <span>Download High-Resolution Poster (PDF)</span>
+    <span>Download Brain Bee Poster (PDF)</span>
   </a>
 
 </div>
@@ -564,6 +564,7 @@ const CompetitionCard = ({
     </ul>
   </div>
 );
+export default BrainBee;
 
 
 

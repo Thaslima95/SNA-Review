@@ -106,7 +106,7 @@ const seminarsData: Seminar[] = [
   }
 ];
 
-export const Seminars = () => {
+ const Seminars = () => {
   return (
     <div className="bg-white min-h-screen font-sans text-slate-900">
       
@@ -252,3 +252,4 @@ const SeminarCard = ({ data }: { data: Seminar }) => {
     </div>
   );
 };
+export default Seminars;

@@ -4,7 +4,7 @@ import { ArrowRight, Calendar, Brain, FileText, ChevronRight, Sparkles, Globe, U
 import { Hero } from './Hero';
 import posterImage from '@/assets/Poster1_SNA Symposium 2026-v7r.jpg';
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="flex flex-col">
        <Hero />
@@ -248,3 +248,4 @@ SNA has set aside funds to support its members travelling to and presenting at i
     </div>
   );
 };
+export default Home;

@@ -9,3 +9,63 @@
 [build.environment]
   NODE_VERSION = "18"
   NPM_FLAGS = "--include=dev"
+
+# ==============================
+# REDIRECTS
+# ==============================
+
+# Redirect www → non-www (canonical)
+[[redirects]]
+  from = "https://www.neuroscience.sg/*"
+  to = "https://neuroscience.sg/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.neuroscience.sg/*"
+  to = "https://neuroscience.sg/:splat"
+  status = 301
+  force = true
+
+# Redirect HTTP → HTTPS
+[[redirects]]
+  from = "http://neuroscience.sg/*"
+  to = "https://neuroscience.sg/:splat"
+  status = 301
+  force = true
+
+# SPA Fallback (React Router)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+
+# ==============================
+# SECURITY HEADERS
+# ==============================
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+
+    # Force HTTPS for 2 years
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+    # Prevent clickjacking
+    X-Frame-Options = "DENY"
+
+    # Prevent MIME sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Protect referrer info
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Disable unused browser features
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+    # XSS protection (legacy but safe)
+    X-XSS-Protection = "1; mode=block"
+
+    # SAFE Content Security Policy for React + Resend
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https:; font-src 'self' https: data:;"

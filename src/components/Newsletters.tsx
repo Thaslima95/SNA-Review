@@ -45,7 +45,7 @@ const newsletterData: NewsletterItem[] = [
   },
 ];
 
-export const Newsletters = () => {
+const Newsletters = () => {
   return (
     <div className="bg-white min-h-screen font-sans text-slate-900">
       
@@ -163,3 +163,5 @@ const NewsletterCard = ({ item }: { item: NewsletterItem }) => {
     </motion.div>
   );
 };
+
+export default Newsletters;

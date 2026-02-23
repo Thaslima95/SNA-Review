@@ -95,7 +95,7 @@ const executives: Executive[] = [
   },
 ];
 
-export const Executive = () => {
+ const Executive = () => {
   const location = useLocation();
   const [copiedEmail, setCopiedEmail] = useState<string | null>(null);
 
@@ -238,3 +238,4 @@ export const Executive = () => {
     </div>
   );
 };
+export default Executive;

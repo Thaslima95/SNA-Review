@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Send } from 'lucide-react';
 
-export const ContactUs = () => {
+ const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -115,3 +115,5 @@ export const ContactUs = () => {
     </section>
   );
 };
+
+export default ContactUs;

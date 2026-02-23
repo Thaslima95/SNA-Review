@@ -1,7 +1,7 @@
 import React from 'react';
 import { FileText, Calendar, Award, Quote, BookOpen, Clock, MapPin } from 'lucide-react';
 
-export const ResearchHighlights = () => {
+const ResearchHighlights = () => {
   return (
     <div className="bg-slate-50 min-h-screen font-sans text-slate-900">
       {/* 1. Page Banner */}
@@ -285,3 +285,5 @@ const MilestoneCard = ({
     </p>
   </div>
 );
+
+export default ResearchHighlights;

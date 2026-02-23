@@ -15,7 +15,7 @@ import {
   Calendar,
 } from "lucide-react";
 
-export const History = () => {
+ const History = () => {
   return (
     <div className="bg-white min-h-screen font-sans text-slate-900">
       {/* 1. Page Banner */}
@@ -386,3 +386,4 @@ const ImpactCard = ({
     </div>
   );
 };
+export default History;

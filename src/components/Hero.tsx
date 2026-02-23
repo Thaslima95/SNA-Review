@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export const Hero = () => {
   return (
@@ -56,11 +57,12 @@ export const Hero = () => {
             className="relative"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-               <img 
-                 src="https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyb3NjaWVuY2UlMjBhYnN0cmFjdCUyMGJyYWluJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldHdvcmt8ZW58MXx8fHwxNzcwMDMzODE0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" 
-                 alt="Abstract Neural Network" 
-                 className="w-full h-[600px] object-cover"
-               />
+              <ImageWithFallback
+  src="https://images.unsplash.com/photo-1737505599159-5ffc1dcbc08f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuZXVyb3NjaWVuY2UlMjBhYnN0cmFjdCUyMGJyYWluJTIwYXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZSUyMG5ldHdvcmt8ZW58MXx8fHwxNzcwMDMzODE0fDA&ixlib=rb-4.1.0&q=80&w=1080"
+  alt="Abstract Neural Network"
+  className="w-full h-[600px] object-cover"
+  priority
+/>
                <div className="absolute inset-0 bg-gradient-to-t from-red-900/20 to-transparent mix-blend-overlay" />
             </div>
             

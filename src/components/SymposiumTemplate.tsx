@@ -324,7 +324,7 @@ interface SymposiumTemplateProps {
   data?: SymposiumData;
 }
 
-export const SymposiumTemplate: React.FC<
+ const SymposiumTemplate: React.FC<
   SymposiumTemplateProps
 > = ({ data = defaultSymposiumData }) => {
   return (
@@ -695,3 +695,5 @@ const InfoBlock = ({
     </p>
   </div>
 );
+
+export default SymposiumTemplate;
