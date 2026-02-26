@@ -24,25 +24,25 @@ const newsletterData: NewsletterItem[] = [
     type: 'newsletter',
     downloadUrl: "/pdfs/issue2.pdf",
   },
-  {
-    id: '3',
-    title: 'Newsletter – Issue 3',
-    type: 'newsletter',
-    downloadUrl: "#",
-  },
-  {
-    id: '4',
-    title: 'Newsletter – Issue 4',
-    type: 'newsletter',
-    downloadUrl: "#",
-  },
-  {
-    id: 'testimonial',
-    title: "Professor Ling Eng Ang's Testimonial",
-    year: 'Special Feature',
-    type: 'testimonial',
-    downloadUrl: "#",
-  },
+  // {
+  //   id: '3',
+  //   title: 'Newsletter – Issue 3',
+  //   type: 'newsletter',
+  //   downloadUrl: "#",
+  // },
+  // {
+  //   id: '4',
+  //   title: 'Newsletter – Issue 4',
+  //   type: 'newsletter',
+  //   downloadUrl: "#",
+  // },
+  // {
+  //   id: 'testimonial',
+  //   title: "Professor Ling Eng Ang's Testimonial",
+  //   year: 'Special Feature',
+  //   type: 'testimonial',
+  //   downloadUrl: "#",
+  // },
 ];
 
 const Newsletters = () => {

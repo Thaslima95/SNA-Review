@@ -150,7 +150,7 @@ const executives: Executive[] = [
           </h1>
           <div className="w-24 h-1 bg-[#991b1b] mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-slate-600 font-light">
-            The dedicated scientists and clinicians guiding the strategic direction.
+            The dedicated scientists and clinicians guiding the strategic direction
           </p>
         </div>
       </div>

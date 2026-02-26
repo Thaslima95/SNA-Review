@@ -133,7 +133,7 @@ const seminarsData: Seminar[] = [
           </h1>
           <div className="w-24 h-1 bg-[#991b1b] mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-slate-600 max-w-5xl mx-auto font-light leading-relaxed">
-            Connecting our community through expert-led discussions on the latest frontiers in neuroscience.
+            Connecting our community through expert-led discussions on the latest frontiers in neuroscience
           </p>
         </div>
       </div>

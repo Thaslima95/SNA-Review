@@ -27,7 +27,7 @@ const ResearchHighlights = () => {
           </h1>
           <div className="w-24 h-1.5 bg-[#991b1b] mx-auto mb-8 rounded-full shadow-sm"></div>
           <p className="text-xl text-slate-600 max-w-5xl mx-auto font-light leading-relaxed">
-            Showcasing groundbreaking neuroscientific research and discoveries from our community.
+            Showcasing groundbreaking neuroscientific research and discoveries from our community
           </p>
         </div>
       </div>

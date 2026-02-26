@@ -42,7 +42,7 @@ import {
           <div className="w-24 h-1 bg-[#991b1b] mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-slate-600 max-w-5xl mx-auto font-light leading-relaxed">
             Three decades of advancing neuroscience research,
-            education, and collaboration in Singapore.
+            education, and collaboration in Singapore
           </p>
         </div>
       </div>
