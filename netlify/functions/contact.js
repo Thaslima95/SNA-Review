@@ -74,7 +74,7 @@ exports.handler = async (event) => {
 
     await resend.emails.send({
       from: "Singapore Neuroscience Association <no-reply@neuroscience.sg>",
-      to: "thaslibanujas7@gmail.com",
+      to: "secretariatneuroscience@gmail.com",
       subject: "New Website Enquiry – Singapore Neuroscience Association",
       html: adminHtml,
     });
@@ -116,9 +116,9 @@ exports.handler = async (event) => {
               </p>
               <p>If your enquiry is urgent, please contact us directly at:</p>
               <p style="text-align:center;margin:15px 0;">
-                <a href="mailto:secretariat@neuroscience.sg"
+                <a href="mailto:secretariatneuroscience@gmail.com"
                    style="color:#991b1b;font-weight:bold;text-decoration:none;font-size:16px;">
-                  secretariat@neuroscience.sg
+                  secretariatneuroscience@gmail.com
                 </a>
               </p>
               <p>

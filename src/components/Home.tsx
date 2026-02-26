@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, Brain, FileText, ChevronRight, Sparkles, Globe, User, Clock } from 'lucide-react';
 import { Hero } from './Hero';
 import posterImage from '@/assets/Poster1_SNA Symposium 2026-v7r.jpg';
 
 const Home = () => {
+  useEffect(() => {
+  import('./SymposiumTemplate');
+}, []);
   return (
     <div className="flex flex-col">
        <Hero />

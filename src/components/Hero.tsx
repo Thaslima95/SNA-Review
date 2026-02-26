@@ -19,7 +19,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-red-100 mb-8">
+            <div className="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-red-100 mb-8 mt-4 md:mt-0">
               <Sparkles className="w-4 h-4 text-[#991b1b]" />
               <span className="text-sm font-medium text-slate-600">The Heart of Neuroscience in Singapore</span>
             </div>

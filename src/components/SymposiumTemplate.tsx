@@ -310,7 +310,7 @@ const defaultSymposiumData: SymposiumData = {
       "https://maps.google.com/?q=MD11+CRC+Auditorium+NUS",
   },
   contact: {
-    email: "secretariat@neuroscience.sg",
+    email: "secretariatneuroscience@gmail.com",
     address: [
       "Singapore Neuroscience Association",
       "c/o Department of Anatomy",
