@@ -174,7 +174,7 @@ SNA has set aside funds to support its members travelling to and presenting at i
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-end mb-10">
                 <h2 className="text-3xl font-bold text-slate-900">Upcoming Events & Seminars</h2>
-                <Link to="/seminars" className="text-[#991b1b] font-semibold flex items-center hover:underline">
+                <Link to="/symposium-2026" className="text-[#991b1b] font-semibold flex items-center hover:underline">
                     View All <ChevronRight size={16} />
                 </Link>
             </div>
@@ -190,7 +190,7 @@ SNA has set aside funds to support its members travelling to and presenting at i
                 </Link>
 
                 {/* Event 2: Symposium */}
-                <Link to="/symposium" className="block p-6 bg-slate-50 rounded-xl border border-slate-100 hover:border-red-200 hover:bg-red-50/30 transition-all group">
+                <Link to="/symposium-2026" className="block p-6 bg-slate-50 rounded-xl border border-slate-100 hover:border-red-200 hover:bg-red-50/30 transition-all group">
                     <div className="text-xs font-bold text-[#991b1b] uppercase tracking-wider mb-2">Symposium</div>
                     <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-[#991b1b]">Neuroscience Across the Lifespan</h3>
                     <div className="flex items-center text-slate-500 text-sm">
